@@ -44,6 +44,7 @@
 		484A49A7240E083D001A98E7 /* MyArchivedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484A49A6240E083D001A98E7 /* MyArchivedVC.swift */; };
 		484A49A9240E08C0001A98E7 /* MyProfileArchivedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484A49A8240E08C0001A98E7 /* MyProfileArchivedVC.swift */; };
 		484A7E52242DFB56008C7032 /* ConnectResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484A7E51242DFB56008C7032 /* ConnectResultVC.swift */; };
+		484E9CA1289917B400F550D3 /* DeleteAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484E9CA0289917B400F550D3 /* DeleteAccountVC.swift */; };
 		485D2BCA23FFD1E100D2AF82 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485D2BC923FFD1E100D2AF82 /* Data.swift */; };
 		485E11B3246E545700271300 /* PriceTransationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485E11B2246E545700271300 /* PriceTransationVC.swift */; };
 		4871281D23EAB7390053BB7E /* MyArtPassVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4871281C23EAB7390053BB7E /* MyArtPassVC.swift */; };
@@ -223,6 +224,7 @@
 		484A49A6240E083D001A98E7 /* MyArchivedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyArchivedVC.swift; sourceTree = "<group>"; };
 		484A49A8240E08C0001A98E7 /* MyProfileArchivedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileArchivedVC.swift; sourceTree = "<group>"; };
 		484A7E51242DFB56008C7032 /* ConnectResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectResultVC.swift; sourceTree = "<group>"; };
+		484E9CA0289917B400F550D3 /* DeleteAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAccountVC.swift; sourceTree = "<group>"; };
 		485D2BC923FFD1E100D2AF82 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		485E11B2246E545700271300 /* PriceTransationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceTransationVC.swift; sourceTree = "<group>"; };
 		4871281C23EAB7390053BB7E /* MyArtPassVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyArtPassVC.swift; sourceTree = "<group>"; };
@@ -541,6 +543,7 @@
 				48E4CB7623EAA80400961A6C /* IntroCollectFirst.xib */,
 				4849E0B7252C1B0E00EBDF62 /* PayWithApplePayVC.swift */,
 				4849E0BB252C2A6A00EBDF62 /* MyMemberShipVC.swift */,
+				484E9CA0289917B400F550D3 /* DeleteAccountVC.swift */,
 			);
 			path = IntroVC;
 			sourceTree = "<group>";
@@ -995,6 +998,7 @@
 				4897D29D24A9DD7B0006B462 /* ClickBuyerVC.swift in Sources */,
 				481238452431A6AD009D4971 /* JurisdictionVC.swift in Sources */,
 				4814F39D23F6451A0018FE6C /* RegisterVC.swift in Sources */,
+				484E9CA1289917B400F550D3 /* DeleteAccountVC.swift in Sources */,
 				48A16726245FF94900F61133 /* ActiveDirectorVC.swift in Sources */,
 				48DBAAD4248F78AB00855F4E /* AmpSellerCell.swift in Sources */,
 				48F04A5923ED520300A370B9 /* MyPassIDVC.swift in Sources */,
@@ -1178,7 +1182,7 @@
 				CODE_SIGN_ENTITLEMENTS = ArtPassID/artplusDebug.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = 7CZRA7KNK3;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1195,7 +1199,7 @@
 				);
 				MARKETING_VERSION = 3.5;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.qtsvn.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qtsvn.artpassid;
 				PRODUCT_NAME = artplus;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
@@ -1215,7 +1219,7 @@
 				CODE_SIGN_ENTITLEMENTS = ArtPassID/artplusRelease.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = H5QVY2M337;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
