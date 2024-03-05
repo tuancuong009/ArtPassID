@@ -43,6 +43,8 @@ class MoreSettingVC: UIViewController {
             switch(authContext.biometryType) {
             case .none:
                 return .none
+            case .opticID:
+                return .none
             case .touchID:
                 return .touch
             case .faceID:

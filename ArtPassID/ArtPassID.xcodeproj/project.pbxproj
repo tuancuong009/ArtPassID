@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -167,6 +167,8 @@
 		7887C4FB22697D93002F66B5 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7887C4FA22697D93002F66B5 /* MenuVC.swift */; };
 		7892C3BE2269AF00009CEE61 /* AppDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7892C3BD2269AF00009CEE61 /* AppDefine.swift */; };
 		7892C3C12269B4D4009CEE61 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7892C3BF2269B4D3009CEE61 /* Main_iPad.storyboard */; };
+		884D31252B96B53300159A7B /* Gilmer-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 884D31242B96B53300159A7B /* Gilmer-Regular.otf */; };
+		884D31272B96B56700159A7B /* Gilmer-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 884D31262B96B56700159A7B /* Gilmer-Bold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -347,6 +349,8 @@
 		7887C4FA22697D93002F66B5 /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 		7892C3BD2269AF00009CEE61 /* AppDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDefine.swift; sourceTree = "<group>"; };
 		7892C3C02269B4D4009CEE61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		884D31242B96B53300159A7B /* Gilmer-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilmer-Regular.otf"; sourceTree = "<group>"; };
+		884D31262B96B56700159A7B /* Gilmer-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilmer-Bold.otf"; sourceTree = "<group>"; };
 		E4AE36D33275EE19DEC53A82 /* Pods-ArtPassID.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtPassID.release.xcconfig"; path = "Target Support Files/Pods-ArtPassID/Pods-ArtPassID.release.xcconfig"; sourceTree = "<group>"; };
 		E7CFD77F5DBC911F77CCA8E6 /* Pods_ArtPassID.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArtPassID.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -523,6 +527,8 @@
 		48DFD933238F613500B68163 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				884D31262B96B56700159A7B /* Gilmer-Bold.otf */,
+				884D31242B96B53300159A7B /* Gilmer-Regular.otf */,
 				48DA6233272BDC0300063460 /* NunitoSans-Light.ttf */,
 				48DA6234272BDC0400063460 /* NunitoSans-SemiBold.ttf */,
 				48DFD934238F613500B68163 /* OpenSans-Semibold.ttf */,
@@ -818,12 +824,14 @@
 				481C494223F15986000FD47F /* MainSDK.storyboard in Resources */,
 				48E4CB9123EAAEAC00961A6C /* Roboto-Black.ttf in Resources */,
 				7887C4D8226963D8002F66B5 /* Montserrat-SemiBold.ttf in Resources */,
+				884D31252B96B53300159A7B /* Gilmer-Regular.otf in Resources */,
 				7887C4DB226963D8002F66B5 /* Montserrat-ThinItalic.ttf in Resources */,
 				48DFD93B238F613600B68163 /* OpenSans-Regular.ttf in Resources */,
 				48E4CB8823EAAEAC00961A6C /* Roboto-Regular.ttf in Resources */,
 				48DBAAD5248F78AB00855F4E /* AmpSellerCell.xib in Resources */,
 				48E4CB8623EAAEAC00961A6C /* Roboto-Medium.ttf in Resources */,
 				7887C4CD226963D8002F66B5 /* Montserrat-BoldItalic.ttf in Resources */,
+				884D31272B96B56700159A7B /* Gilmer-Bold.otf in Resources */,
 				7887C4CA226963D8002F66B5 /* Montserrat-Black.ttf in Resources */,
 				48E4CB8B23EAAEAC00961A6C /* Roboto-BoldItalic.ttf in Resources */,
 				481238462431A6AD009D4971 /* JurisdictionVC.xib in Resources */,
@@ -1182,7 +1190,7 @@
 				CODE_SIGN_ENTITLEMENTS = ArtPassID/artplusDebug.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7CZRA7KNK3;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1197,7 +1205,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.5;
+				MARKETING_VERSION = 3.8;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.qtsvn.artpassid;
 				PRODUCT_NAME = artplus;
@@ -1217,9 +1225,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_ENTITLEMENTS = ArtPassID/artplusRelease.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 7;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H5QVY2M337;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1234,11 +1242,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.5;
+				MARKETING_VERSION = 3.8;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.artpassid.artplus;
 				PRODUCT_NAME = artplus;
-				PROVISIONING_PROFILE_SPECIFIER = ArtPassAPPSTORE_Dec07;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_WORKSPACE = YES;

@@ -234,12 +234,12 @@ extension MyReportVC: UITableViewDataSource, UITableViewDelegate
             }
         }
         else{
-            cell.lblName.text = "MY ARTPASS ID"
+            cell.lblName.text = "MY IPASS ID"
             if APP_DELEGATE.profileObj?.connectRp != nil {
                 let connectRp = APP_DELEGATE.profileObj?.connectRp
                 if (connectRp!.object(forKey: "fileUrl") as? String) != nil
                 {
-                     cell.btnReview.setTitle("VIEW ARTPASS ID", for: .normal)
+                     cell.btnReview.setTitle("VIEW IPASS ID", for: .normal)
                       cell.bgReview.backgroundColor = Common.hexStringToUIColor(COLOR_REPORT.COLOR_XANH)
                 }
                 else{
@@ -251,7 +251,7 @@ extension MyReportVC: UITableViewDataSource, UITableViewDelegate
                 cell.btnReview.setTitle("CREATE YOUR REPORT", for: .normal)
                 cell.bgReview.backgroundColor = Common.hexStringToUIColor(COLOR_REPORT.COLOR_TIM)
             }
-//            cell.lblName.text = "MY ARTPASS ID"
+//            cell.lblName.text = "MY iPass ID"
 //            var dictInfo: NSDictionary?
 //             if APP_DELEGATE.profileObj?.utype == UTYPE_USER.BUSINESS {
 //                dictInfo = APP_DELEGATE.profileObj?.company_info
@@ -268,7 +268,7 @@ extension MyReportVC: UITableViewDataSource, UITableViewDelegate
 //                    let connectRp = APP_DELEGATE.profileObj?.connectRp
 //                    if (connectRp!.object(forKey: "fileUrl") as? String) != nil
 //                    {
-//                         cell.btnReview.setTitle("VIEW ARTPASS ID", for: .normal)
+//                         cell.btnReview.setTitle("VIEW IPASS ID", for: .normal)
 //                          cell.bgReview.backgroundColor = Common.hexStringToUIColor(COLOR_REPORT.COLOR_XANH)
 //                    }
 //                    else{

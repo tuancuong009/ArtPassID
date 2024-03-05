@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WOg-6T-c6L">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WOg-6T-c6L">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -29,6 +26,7 @@
             <objects>
                 <navigationController navigationBarHidden="YES" id="WOg-6T-c6L" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Azj-Za-dlT">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -50,7 +48,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aba-0b-oov">
                                 <rect key="frame" x="0.0" y="20" width="768" height="64"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARTPASS ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3s-Pt-Xai">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPass ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3s-Pt-Xai">
                                         <rect key="frame" x="254" y="7.5" width="260" height="49"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Black" family="Montserrat" pointSize="40"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -121,7 +119,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbN-n0-tdL">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbN-n0-tdL">
                                         <rect key="frame" x="0.0" y="0.0" width="668" height="70"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="25"/>
                                         <state key="normal" title="SIGN UP">
@@ -157,7 +155,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPn-dC-Ofc">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPn-dC-Ofc">
                                         <rect key="frame" x="0.0" y="0.0" width="668" height="70"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="25"/>
                                         <state key="normal" title="SIGN IN">
@@ -182,6 +180,7 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.11764704436063766" green="0.066751971840858459" blue="0.65089792013168335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="VG5-JC-MdN" firstAttribute="top" secondItem="Yj4-jf-TqV" secondAttribute="bottom" constant="30" id="6TA-1z-mno"/>
@@ -200,7 +199,6 @@
                             <constraint firstItem="2CL-B1-rG4" firstAttribute="top" secondItem="VG5-JC-MdN" secondAttribute="bottom" constant="50" id="vxH-Vr-QL8"/>
                             <constraint firstItem="Yj4-jf-TqV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="zwZ-M7-X3p"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="VvY-g5-YhY"/>
                     <size key="freeformSize" width="768" height="1025"/>
@@ -230,8 +228,8 @@
                                             <action selector="doBack:" destination="jR6-bd-d51" eventType="touchUpInside" id="two-Hl-Y7n"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARTPASS ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yj3-DA-HrU">
-                                        <rect key="frame" x="254" y="7.5" width="260" height="49"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPass ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yj3-DA-HrU">
+                                        <rect key="frame" x="298" y="7.5" width="172" height="49"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Black" family="Montserrat" pointSize="40"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -258,7 +256,6 @@
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="GgV-pQ-p5c">
                                                         <rect key="frame" x="10" y="0.0" width="698" height="60"/>
-                                                        <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
                                                         <connections>
@@ -285,7 +282,6 @@
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="TJR-l7-zh3">
                                                         <rect key="frame" x="10" y="0.0" width="698" height="60"/>
-                                                        <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
                                                         <connections>
@@ -312,7 +308,6 @@
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="sm0-zT-Ttn">
                                                         <rect key="frame" x="10" y="0.0" width="698" height="60"/>
-                                                        <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardType="emailAddress" returnKeyType="next"/>
                                                         <connections>
@@ -346,7 +341,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6q-s1-a6K">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6q-s1-a6K">
                                                         <rect key="frame" x="0.0" y="0.0" width="668" height="70"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="25"/>
                                                         <state key="normal" title="NEXT">
@@ -399,6 +394,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="my4-t1-hss"/>
                         <color key="backgroundColor" red="0.1176470444" green="0.066751971839999993" blue="0.65089792010000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="my4-t1-hss" firstAttribute="trailing" secondItem="Fmz-iU-59f" secondAttribute="trailing" id="4Bh-Pg-uPe"/>
@@ -409,7 +405,6 @@
                             <constraint firstItem="Fmz-iU-59f" firstAttribute="leading" secondItem="my4-t1-hss" secondAttribute="leading" id="hz4-9B-Kx8"/>
                             <constraint firstItem="fLL-JU-z4K" firstAttribute="leading" secondItem="my4-t1-hss" secondAttribute="leading" id="nhQ-oT-vfj"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="my4-t1-hss"/>
                     </view>
                     <navigationItem key="navigationItem" id="Got-x8-p1I"/>
                     <size key="freeformSize" width="768" height="1024"/>
@@ -434,8 +429,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CdZ-7z-zWM">
                                 <rect key="frame" x="0.0" y="20" width="768" height="64"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARTPASS ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jee-ul-fOW">
-                                        <rect key="frame" x="254" y="7.5" width="260" height="49"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPass ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jee-ul-fOW">
+                                        <rect key="frame" x="298" y="7.5" width="172" height="49"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Black" family="Montserrat" pointSize="40"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -472,7 +467,6 @@
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Iwr-4J-Rl6">
                                                         <rect key="frame" x="10" y="0.0" width="698" height="60"/>
-                                                        <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next" secureTextEntry="YES"/>
                                                         <connections>
@@ -499,7 +493,6 @@
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Re-enter password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="BIf-8e-tjo">
                                                         <rect key="frame" x="10" y="0.0" width="698" height="60"/>
-                                                        <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next" secureTextEntry="YES"/>
                                                         <connections>
@@ -526,7 +519,6 @@
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select a role that bes fits your profile" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Dbg-lh-VHI">
                                                         <rect key="frame" x="10" y="0.0" width="698" height="60"/>
-                                                        <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
                                                         <connections>
@@ -596,7 +588,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYO-vo-mgZ">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYO-vo-mgZ">
                                                         <rect key="frame" x="0.0" y="0.0" width="668" height="70"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="25"/>
                                                         <state key="normal" title="NEXT">
@@ -653,6 +645,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="SLf-3F-ad0"/>
                         <color key="backgroundColor" red="0.1176470444" green="0.066751971839999993" blue="0.65089792010000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="SLf-3F-ad0" firstAttribute="trailing" secondItem="CdZ-7z-zWM" secondAttribute="trailing" id="7DS-Fv-8hc"/>
@@ -663,7 +656,6 @@
                             <constraint firstItem="CdZ-7z-zWM" firstAttribute="leading" secondItem="SLf-3F-ad0" secondAttribute="leading" id="i2C-Za-wY1"/>
                             <constraint firstItem="SLf-3F-ad0" firstAttribute="trailing" secondItem="kHF-Dp-5K6" secondAttribute="trailing" id="t1c-tn-a0v"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="SLf-3F-ad0"/>
                     </view>
                     <navigationItem key="navigationItem" id="G0Y-Da-Wwy"/>
                     <size key="freeformSize" width="768" height="1024"/>
@@ -686,8 +678,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OJq-Dp-mam">
                                 <rect key="frame" x="0.0" y="20" width="768" height="64"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARTPASS ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cku-YH-pEB">
-                                        <rect key="frame" x="238" y="4.5" width="292.5" height="55"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPass ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cku-YH-pEB">
+                                        <rect key="frame" x="287.5" y="4.5" width="193.5" height="55"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Black" family="Montserrat" pointSize="45"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -725,7 +717,7 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBc-y0-nUT">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBc-y0-nUT">
                                                 <rect key="frame" x="30" y="121.5" width="160" height="160"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -741,7 +733,6 @@
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="John Doe" placeholder="First Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="CEe-S4-xWB">
                                                         <rect key="frame" x="10" y="0.0" width="698" height="60"/>
-                                                        <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
                                                         <connections>
@@ -768,7 +759,6 @@
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name" placeholder="Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="qgs-Lc-zEG">
                                                         <rect key="frame" x="10" y="0.0" width="698" height="60"/>
-                                                        <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
                                                         <connections>
@@ -795,7 +785,6 @@
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" placeholder="Email" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="wQS-SA-71Q">
                                                         <rect key="frame" x="10" y="0.0" width="698" height="60"/>
-                                                        <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
                                                         <connections>
@@ -829,7 +818,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X69-ra-zMM">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X69-ra-zMM">
                                                         <rect key="frame" x="0.0" y="0.0" width="668" height="70"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="25"/>
                                                         <state key="normal" title="NEXT">
@@ -887,6 +876,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="5Wf-bp-6p7"/>
                         <color key="backgroundColor" red="0.1176470444" green="0.066751971839999993" blue="0.65089792010000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="OJq-Dp-mam" firstAttribute="leading" secondItem="5Wf-bp-6p7" secondAttribute="leading" id="MWP-yT-oby"/>
@@ -897,7 +887,6 @@
                             <constraint firstItem="5Wf-bp-6p7" firstAttribute="trailing" secondItem="OJq-Dp-mam" secondAttribute="trailing" id="peH-aM-MC2"/>
                             <constraint firstItem="OJq-Dp-mam" firstAttribute="top" secondItem="5Wf-bp-6p7" secondAttribute="top" id="zVU-2z-NTo"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="5Wf-bp-6p7"/>
                     </view>
                     <navigationItem key="navigationItem" id="atQ-80-LnG"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -921,8 +910,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c68-N5-rGz">
                                 <rect key="frame" x="0.0" y="20" width="768" height="64"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARTPASS ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wel-QB-tPE">
-                                        <rect key="frame" x="254" y="7.5" width="260" height="49"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPass ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wel-QB-tPE">
+                                        <rect key="frame" x="298" y="7.5" width="172" height="49"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Black" family="Montserrat" pointSize="40"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -960,7 +949,7 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIo-cm-DkC">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIo-cm-DkC">
                                                 <rect key="frame" x="30" y="96" width="160" height="160"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -973,7 +962,6 @@
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="John Doe" placeholder="First Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="a9B-Yk-Zwo">
                                                         <rect key="frame" x="10" y="0.0" width="698" height="60"/>
-                                                        <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
                                                         <connections>
@@ -1000,7 +988,6 @@
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name" placeholder="Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="P5n-vy-Ums">
                                                         <rect key="frame" x="10" y="0.0" width="698" height="60"/>
-                                                        <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
                                                         <connections>
@@ -1027,7 +1014,6 @@
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" placeholder="Email" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jW6-fo-Toa">
                                                         <rect key="frame" x="10" y="0.0" width="698" height="60"/>
-                                                        <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
                                                         <connections>
@@ -1054,7 +1040,6 @@
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="REj-KR-5V7">
                                                         <rect key="frame" x="10" y="0.0" width="698" height="60"/>
-                                                        <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next" secureTextEntry="YES"/>
                                                         <connections>
@@ -1081,7 +1066,6 @@
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="+32 548966578" placeholder="Phone" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Kn4-lI-sVl">
                                                         <rect key="frame" x="10" y="0.0" width="698" height="60"/>
-                                                        <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardType="numberPad" returnKeyType="next"/>
                                                         <connections>
@@ -1115,7 +1099,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lrp-5a-B0O">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lrp-5a-B0O">
                                                         <rect key="frame" x="0.0" y="0.0" width="708" height="70"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="25"/>
                                                         <state key="normal" title="CHANGE">
@@ -1148,7 +1132,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7R-ol-V3f">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7R-ol-V3f">
                                                         <rect key="frame" x="0.0" y="0.0" width="708" height="70"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="25"/>
                                                         <state key="normal" title="UPGRADE TIER PASSPORT ROLE ">
@@ -1212,6 +1196,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="pz1-9j-MmY"/>
                         <color key="backgroundColor" red="0.1176470444" green="0.066751971839999993" blue="0.65089792010000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="c68-N5-rGz" firstAttribute="top" secondItem="pz1-9j-MmY" secondAttribute="top" id="6DI-KJ-0Go"/>
@@ -1222,7 +1207,6 @@
                             <constraint firstItem="U2U-nO-DWt" firstAttribute="top" secondItem="c68-N5-rGz" secondAttribute="bottom" id="vxz-el-ibj"/>
                             <constraint firstItem="c68-N5-rGz" firstAttribute="leading" secondItem="pz1-9j-MmY" secondAttribute="leading" id="y3u-Rw-56g"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="pz1-9j-MmY"/>
                     </view>
                     <navigationItem key="navigationItem" id="72d-2N-x8H"/>
                     <size key="freeformSize" width="768" height="1024"/>
@@ -1242,8 +1226,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bVd-vG-h3Y">
                                 <rect key="frame" x="0.0" y="20" width="768" height="64"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARTPASS ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98K-Qd-c6q">
-                                        <rect key="frame" x="254" y="7.5" width="260" height="49"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPass ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98K-Qd-c6q">
+                                        <rect key="frame" x="298" y="7.5" width="172" height="49"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Black" family="Montserrat" pointSize="40"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -1292,7 +1276,6 @@
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Select your country code" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Mwx-u7-Zsh">
                                                         <rect key="frame" x="10" y="0.0" width="698" height="60"/>
-                                                        <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
                                                         <connections>
@@ -1319,7 +1302,6 @@
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your mobile phone number" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="edq-Hv-f4g">
                                                         <rect key="frame" x="10" y="0.0" width="698" height="60"/>
-                                                        <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardType="numberPad" returnKeyType="next"/>
                                                         <connections>
@@ -1353,7 +1335,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3L-uk-Cvj">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3L-uk-Cvj">
                                                         <rect key="frame" x="0.0" y="0.0" width="668" height="70"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="25"/>
                                                         <state key="normal" title="VERIFY">
@@ -1400,7 +1382,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAG-Ih-J7M">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAG-Ih-J7M">
                                                         <rect key="frame" x="0.0" y="0.0" width="668" height="70"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="25"/>
                                                         <state key="normal" title="ENTER VERIFICATION CODE">
@@ -1464,6 +1446,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jcb-Kn-zsr"/>
                         <color key="backgroundColor" red="0.1176470444" green="0.066751971839999993" blue="0.65089792010000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="aIn-VL-HFu" firstAttribute="top" secondItem="bVd-vG-h3Y" secondAttribute="bottom" id="68d-X0-aQj"/>
@@ -1474,7 +1457,6 @@
                             <constraint firstItem="bVd-vG-h3Y" firstAttribute="leading" secondItem="Jcb-Kn-zsr" secondAttribute="leading" id="Yw1-sG-eUj"/>
                             <constraint firstItem="Jcb-Kn-zsr" firstAttribute="bottom" secondItem="aIn-VL-HFu" secondAttribute="bottom" id="ejL-Pb-z3l"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Jcb-Kn-zsr"/>
                     </view>
                     <navigationItem key="navigationItem" id="ywB-CL-p92"/>
                     <size key="freeformSize" width="768" height="1024"/>
@@ -1535,7 +1517,6 @@
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="YWa-4d-nh3">
                                                         <rect key="frame" x="10" y="0.0" width="698" height="60"/>
-                                                        <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
                                                     </textField>
@@ -1559,7 +1540,6 @@
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="mo6-vW-lsD">
                                                         <rect key="frame" x="10" y="0.0" width="698" height="60"/>
-                                                        <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="21"/>
                                                         <textInputTraits key="textInputTraits" returnKeyType="next" secureTextEntry="YES"/>
                                                     </textField>
@@ -1590,7 +1570,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUt-Eo-V2b">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUt-Eo-V2b">
                                                         <rect key="frame" x="0.0" y="0.0" width="668" height="70"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="25"/>
                                                         <state key="normal" title="LOGIN">
@@ -1640,6 +1620,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="X3q-8l-j9K"/>
                         <color key="backgroundColor" red="0.11764705882352941" green="0.066666666666666666" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="X3q-8l-j9K" firstAttribute="trailing" secondItem="zxs-Nk-CNg" secondAttribute="trailing" id="1SC-OQ-J5A"/>
@@ -1650,7 +1631,6 @@
                             <constraint firstItem="dIQ-di-HOF" firstAttribute="leading" secondItem="X3q-8l-j9K" secondAttribute="leading" id="m41-nY-z1v"/>
                             <constraint firstItem="dIQ-di-HOF" firstAttribute="top" secondItem="X3q-8l-j9K" secondAttribute="top" id="noc-zU-M2p"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="X3q-8l-j9K"/>
                     </view>
                     <navigationItem key="navigationItem" id="2eZ-vl-yea"/>
                     <size key="freeformSize" width="768" height="1024"/>
@@ -1671,7 +1651,7 @@
                             <tableViewSection id="vcZ-mL-TSS">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="MFk-lC-qaC">
-                                        <rect key="frame" x="0.0" y="0.0" width="768" height="60"/>
+                                        <rect key="frame" x="0.0" y="50" width="768" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MFk-lC-qaC" id="cPI-iw-nxF">
                                             <rect key="frame" x="0.0" y="0.0" width="768" height="60"/>
@@ -1694,7 +1674,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="eGG-Ro-bSo">
-                                        <rect key="frame" x="0.0" y="60" width="768" height="60"/>
+                                        <rect key="frame" x="0.0" y="110" width="768" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eGG-Ro-bSo" id="TU6-ad-e5l">
                                             <rect key="frame" x="0.0" y="0.0" width="768" height="60"/>
@@ -1717,7 +1697,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="Q6d-fI-arp">
-                                        <rect key="frame" x="0.0" y="120" width="768" height="60"/>
+                                        <rect key="frame" x="0.0" y="170" width="768" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Q6d-fI-arp" id="Eb2-vF-fOX">
                                             <rect key="frame" x="0.0" y="0.0" width="768" height="60"/>
@@ -1740,7 +1720,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="sjo-k0-oeQ">
-                                        <rect key="frame" x="0.0" y="180" width="768" height="60"/>
+                                        <rect key="frame" x="0.0" y="230" width="768" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sjo-k0-oeQ" id="zUr-EP-I0y">
                                             <rect key="frame" x="0.0" y="0.0" width="768" height="60"/>
@@ -1763,7 +1743,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="FPK-Zx-2d7">
-                                        <rect key="frame" x="0.0" y="240" width="768" height="60"/>
+                                        <rect key="frame" x="0.0" y="290" width="768" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FPK-Zx-2d7" id="OY4-QW-TI7">
                                             <rect key="frame" x="0.0" y="0.0" width="768" height="60"/>
@@ -1786,7 +1766,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="T13-b2-kyH">
-                                        <rect key="frame" x="0.0" y="300" width="768" height="60"/>
+                                        <rect key="frame" x="0.0" y="350" width="768" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="T13-b2-kyH" id="tkW-4q-xf6">
                                             <rect key="frame" x="0.0" y="0.0" width="768" height="60"/>
@@ -1809,7 +1789,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="Djk-kg-sDx">
-                                        <rect key="frame" x="0.0" y="360" width="768" height="60"/>
+                                        <rect key="frame" x="0.0" y="410" width="768" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Djk-kg-sDx" id="qon-gS-cob">
                                             <rect key="frame" x="0.0" y="0.0" width="768" height="60"/>
@@ -1832,7 +1812,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="d4u-gN-VuH">
-                                        <rect key="frame" x="0.0" y="420" width="768" height="60"/>
+                                        <rect key="frame" x="0.0" y="470" width="768" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="d4u-gN-VuH" id="LQu-sC-shz">
                                             <rect key="frame" x="0.0" y="0.0" width="768" height="60"/>
@@ -1855,7 +1835,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="sdL-hB-8YX">
-                                        <rect key="frame" x="0.0" y="480" width="768" height="60"/>
+                                        <rect key="frame" x="0.0" y="530" width="768" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sdL-hB-8YX" id="XWd-WC-kQE">
                                             <rect key="frame" x="0.0" y="0.0" width="768" height="60"/>
@@ -1878,7 +1858,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="48u-1p-nsG">
-                                        <rect key="frame" x="0.0" y="540" width="768" height="60"/>
+                                        <rect key="frame" x="0.0" y="590" width="768" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="48u-1p-nsG" id="fiV-G6-dzr">
                                             <rect key="frame" x="0.0" y="0.0" width="768" height="60"/>
@@ -1901,7 +1881,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="glw-lT-nV2">
-                                        <rect key="frame" x="0.0" y="600" width="768" height="60"/>
+                                        <rect key="frame" x="0.0" y="650" width="768" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="glw-lT-nV2" id="N02-p4-lnT">
                                             <rect key="frame" x="0.0" y="0.0" width="768" height="60"/>
@@ -1924,7 +1904,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="ZY7-BY-3lB">
-                                        <rect key="frame" x="0.0" y="660" width="768" height="60"/>
+                                        <rect key="frame" x="0.0" y="710" width="768" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZY7-BY-3lB" id="fXp-9T-QZX">
                                             <rect key="frame" x="0.0" y="0.0" width="768" height="60"/>
@@ -1968,8 +1948,8 @@
                     <view key="view" contentMode="scaleToFill" id="4zG-0S-zR1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="yva-xM-ocR"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="LuR-qu-ZwY"/>
                     <connections>
@@ -1992,7 +1972,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4TE-yq-tjU">
                                 <rect key="frame" x="0.0" y="20" width="768" height="64"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARTPASS ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPJ-R0-sDY">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPass ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPJ-R0-sDY">
                                         <rect key="frame" x="75" y="19" width="618" height="26"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Black" family="Montserrat" pointSize="21"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2022,13 +2002,13 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="NBY-pc-aKx"/>
                         <color key="backgroundColor" red="0.1176470588" green="0.066666666669999999" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="4TE-yq-tjU" firstAttribute="leading" secondItem="NBY-pc-aKx" secondAttribute="leading" id="KG9-7g-Q8R"/>
                             <constraint firstItem="4TE-yq-tjU" firstAttribute="top" secondItem="NBY-pc-aKx" secondAttribute="top" id="KL2-iC-Yqa"/>
                             <constraint firstItem="NBY-pc-aKx" firstAttribute="trailing" secondItem="4TE-yq-tjU" secondAttribute="trailing" id="d1b-Ap-GuN"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="NBY-pc-aKx"/>
                     </view>
                     <navigationItem key="navigationItem" id="wfj-q7-sky"/>
                     <size key="freeformSize" width="768" height="1025"/>
@@ -2153,7 +2133,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bn7-Ye-O0B" customClass="UIButtonX" customModule="ArtPassID" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bn7-Ye-O0B" customClass="UIButtonX" customModule="ArtPassID" customModuleProvider="target">
                                                 <rect key="frame" x="673" y="217" width="80" height="35"/>
                                                 <color key="backgroundColor" red="0.1176470444" green="0.066751971839999993" blue="0.65089792010000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -2192,7 +2172,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3IX-gp-jgh" customClass="UIButtonX" customModule="ArtPassID" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3IX-gp-jgh" customClass="UIButtonX" customModule="ArtPassID" customModuleProvider="target">
                                                         <rect key="frame" x="673" y="5.5" width="80" height="35"/>
                                                         <color key="backgroundColor" red="0.1176470444" green="0.066751971839999993" blue="0.65089792010000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -2246,7 +2226,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbI-Oy-Jkr" customClass="UIButtonX" customModule="ArtPassID" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbI-Oy-Jkr" customClass="UIButtonX" customModule="ArtPassID" customModuleProvider="target">
                                                         <rect key="frame" x="673" y="5.5" width="80" height="35"/>
                                                         <color key="backgroundColor" red="0.1176470444" green="0.066751971839999993" blue="0.65089792010000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -2351,6 +2331,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="oRT-ow-vNt"/>
                         <color key="backgroundColor" red="0.1176470588" green="0.066666666669999999" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="X88-sV-Ajr" firstAttribute="leading" secondItem="oRT-ow-vNt" secondAttribute="leading" id="292-ni-aeS"/>
@@ -2365,7 +2346,6 @@
                             <constraint firstItem="szF-7J-hYO" firstAttribute="leading" secondItem="oRT-ow-vNt" secondAttribute="leading" id="jA3-tw-2CM"/>
                             <constraint firstItem="oRT-ow-vNt" firstAttribute="trailing" secondItem="X88-sV-Ajr" secondAttribute="trailing" id="nUr-wi-L6G"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="oRT-ow-vNt"/>
                     </view>
                     <navigationItem key="navigationItem" id="gKa-dL-NOK"/>
                     <size key="freeformSize" width="768" height="1024"/>
@@ -2517,7 +2497,7 @@
                                                         <rect key="frame" x="15" y="41" width="738" height="77"/>
                                                         <string key="text">id front: Accepted at Jan 23, 2019 3:14:19 AM
 id back: Accepted at Jan 23, 2019 3:14:21 AM
-Selfie video with artpass id: Accepted at Jan 23, 2019 3:14:22 AM</string>
+Selfie video with iPass ID: Accepted at Jan 23, 2019 3:14:22 AM</string>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="21"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -2571,7 +2551,7 @@ Selfie video with artpass id: Accepted at Jan 23, 2019 3:14:22 AM</string>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HNv-pt-QDw" customClass="UIButtonX" customModule="ArtPassID" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HNv-pt-QDw" customClass="UIButtonX" customModule="ArtPassID" customModuleProvider="target">
                                                 <rect key="frame" x="673" y="538" width="80" height="35"/>
                                                 <color key="backgroundColor" red="0.1176470444" green="0.066751971839999993" blue="0.65089792010000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -2610,7 +2590,7 @@ Selfie video with artpass id: Accepted at Jan 23, 2019 3:14:22 AM</string>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7K-DY-miw" customClass="UIButtonX" customModule="ArtPassID" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7K-DY-miw" customClass="UIButtonX" customModule="ArtPassID" customModuleProvider="target">
                                                         <rect key="frame" x="683" y="8" width="70" height="30"/>
                                                         <color key="backgroundColor" red="0.1176470444" green="0.066751971839999993" blue="0.65089792010000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -2663,7 +2643,6 @@ Selfie video with artpass id: Accepted at Jan 23, 2019 3:14:22 AM</string>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Fund to be created" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FQx-A5-34b">
                                                                 <rect key="frame" x="5" y="0.0" width="358.5" height="35"/>
-                                                                <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
@@ -2693,7 +2672,6 @@ Selfie video with artpass id: Accepted at Jan 23, 2019 3:14:22 AM</string>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Street number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bae-W6-1ZC">
                                                                 <rect key="frame" x="5" y="0.0" width="358.5" height="35"/>
-                                                                <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
@@ -2723,7 +2701,6 @@ Selfie video with artpass id: Accepted at Jan 23, 2019 3:14:22 AM</string>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0000" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BxC-ec-efL">
                                                                 <rect key="frame" x="5" y="0.0" width="234.5" height="35"/>
-                                                                <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
@@ -2753,7 +2730,6 @@ Selfie video with artpass id: Accepted at Jan 23, 2019 3:14:22 AM</string>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Vadus" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1nR-b3-jOO">
                                                                 <rect key="frame" x="5" y="0.0" width="234" height="35"/>
-                                                                <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
@@ -2783,7 +2759,6 @@ Selfie video with artpass id: Accepted at Jan 23, 2019 3:14:22 AM</string>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QKT-gZ-kUt">
                                                                 <rect key="frame" x="5" y="0.0" width="234.5" height="35"/>
-                                                                <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
@@ -2808,7 +2783,7 @@ Selfie video with artpass id: Accepted at Jan 23, 2019 3:14:22 AM</string>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YG1-Z1-xDp" customClass="UIButtonX" customModule="ArtPassID" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YG1-Z1-xDp" customClass="UIButtonX" customModule="ArtPassID" customModuleProvider="target">
                                                         <rect key="frame" x="683" y="8" width="70" height="30"/>
                                                         <color key="backgroundColor" red="0.1176470444" green="0.066751971839999993" blue="0.65089792010000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -2875,7 +2850,7 @@ Selfie video with artpass id: Accepted at Jan 23, 2019 3:14:22 AM</string>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1K8-z1-3MU" customClass="UIButtonX" customModule="ArtPassID" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1K8-z1-3MU" customClass="UIButtonX" customModule="ArtPassID" customModuleProvider="target">
                                                         <rect key="frame" x="683" y="8" width="70" height="30"/>
                                                         <color key="backgroundColor" red="0.1176470444" green="0.066751971839999993" blue="0.65089792010000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -2929,7 +2904,7 @@ Selfie video with artpass id: Accepted at Jan 23, 2019 3:14:22 AM</string>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XH8-dI-Csc" customClass="UIButtonX" customModule="ArtPassID" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XH8-dI-Csc" customClass="UIButtonX" customModule="ArtPassID" customModuleProvider="target">
                                                         <rect key="frame" x="683" y="8" width="70" height="30"/>
                                                         <color key="backgroundColor" red="0.1176470444" green="0.066751971839999993" blue="0.65089792010000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -2983,7 +2958,7 @@ Selfie video with artpass id: Accepted at Jan 23, 2019 3:14:22 AM</string>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3b-As-rQF" customClass="UIButtonX" customModule="ArtPassID" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3b-As-rQF" customClass="UIButtonX" customModule="ArtPassID" customModuleProvider="target">
                                                         <rect key="frame" x="683" y="8" width="70" height="30"/>
                                                         <color key="backgroundColor" red="0.1176470444" green="0.066751971839999993" blue="0.65089792010000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -3052,7 +3027,6 @@ Selfie video with artpass id: Accepted at Jan 23, 2019 3:14:22 AM</string>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Fund of Funds" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rcn-ie-cH2">
                                                                 <rect key="frame" x="5" y="0.0" width="732" height="35"/>
-                                                                <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
@@ -3112,7 +3086,6 @@ Selfie video with artpass id: Accepted at Jan 23, 2019 3:14:22 AM</string>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="$" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FLw-K1-eG1">
                                                                 <rect key="frame" x="5" y="0.0" width="732" height="35"/>
-                                                                <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
@@ -3173,7 +3146,6 @@ Selfie video with artpass id: Accepted at Jan 23, 2019 3:14:22 AM</string>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="$" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6jo-dj-nJC">
                                                                 <rect key="frame" x="5" y="0.0" width="732" height="35"/>
-                                                                <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
@@ -3234,7 +3206,6 @@ Selfie video with artpass id: Accepted at Jan 23, 2019 3:14:22 AM</string>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Street Name + Street Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BXT-Pf-GD6">
                                                                 <rect key="frame" x="5" y="0.0" width="732" height="35"/>
-                                                                <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
@@ -3279,7 +3250,6 @@ Selfie video with artpass id: Accepted at Jan 23, 2019 3:14:22 AM</string>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Zip" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WOt-v5-tmE">
                                                                 <rect key="frame" x="5" y="0.0" width="234.5" height="35"/>
-                                                                <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
@@ -3309,7 +3279,6 @@ Selfie video with artpass id: Accepted at Jan 23, 2019 3:14:22 AM</string>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FdL-Cq-gCw">
                                                                 <rect key="frame" x="5" y="0.0" width="234" height="35"/>
-                                                                <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
@@ -3339,7 +3308,6 @@ Selfie video with artpass id: Accepted at Jan 23, 2019 3:14:22 AM</string>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aaf-hN-pwB">
                                                                 <rect key="frame" x="5" y="0.0" width="234.5" height="35"/>
-                                                                <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
@@ -3387,7 +3355,6 @@ Selfie video with artpass id: Accepted at Jan 23, 2019 3:14:22 AM</string>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Telephone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yas-o8-fMm">
                                                                 <rect key="frame" x="5" y="0.0" width="234.5" height="35"/>
-                                                                <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
@@ -3417,7 +3384,6 @@ Selfie video with artpass id: Accepted at Jan 23, 2019 3:14:22 AM</string>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="URL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fbW-8g-OrE">
                                                                 <rect key="frame" x="5" y="0.0" width="234" height="35"/>
-                                                                <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
@@ -3447,7 +3413,6 @@ Selfie video with artpass id: Accepted at Jan 23, 2019 3:14:22 AM</string>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Organisation Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rvI-Hs-ex0">
                                                                 <rect key="frame" x="5" y="0.0" width="234.5" height="35"/>
-                                                                <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
@@ -3506,7 +3471,7 @@ Selfie video with artpass id: Accepted at Jan 23, 2019 3:14:22 AM</string>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHr-7W-SSu">
                                                 <rect key="frame" x="15" y="1679.5" width="738" height="91.5"/>
                                                 <string key="text">Please indicate here below your preferred payment method to purchase art. 
-You may add serveral payment methods to your ARTPASS ID account. 
+You may add serveral payment methods to your iPass ID account. 
 (Bank transfers and Paypal payments do not require additional AML check.) 
 Only payments in cryptocurrency require additional AML checks on your public key(s) for each address.</string>
                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
@@ -3558,7 +3523,6 @@ Only payments in cryptocurrency require additional AML checks on your public key
                                                                 <subviews>
                                                                     <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name of your bank" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CrW-Y9-dcZ">
                                                                         <rect key="frame" x="5" y="0.0" width="732" height="35"/>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                                         <textInputTraits key="textInputTraits"/>
                                                                     </textField>
@@ -3600,7 +3564,6 @@ Only payments in cryptocurrency require additional AML checks on your public key
                                                                 <subviews>
                                                                     <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Zip" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J76-A8-oJd">
                                                                         <rect key="frame" x="5" y="0.0" width="234.5" height="35"/>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                                         <textInputTraits key="textInputTraits"/>
                                                                     </textField>
@@ -3630,7 +3593,6 @@ Only payments in cryptocurrency require additional AML checks on your public key
                                                                 <subviews>
                                                                     <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dvf-M0-dYr">
                                                                         <rect key="frame" x="5" y="0.0" width="234" height="35"/>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                                         <textInputTraits key="textInputTraits"/>
                                                                     </textField>
@@ -3660,7 +3622,6 @@ Only payments in cryptocurrency require additional AML checks on your public key
                                                                 <subviews>
                                                                     <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VQA-CE-Pib">
                                                                         <rect key="frame" x="5" y="0.0" width="234.5" height="35"/>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                                         <textInputTraits key="textInputTraits"/>
                                                                     </textField>
@@ -3767,7 +3728,6 @@ Only payments in cryptocurrency require additional AML checks on your public key
                                                                 <subviews>
                                                                     <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name of your bank" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x57-uO-Sxa">
                                                                         <rect key="frame" x="5" y="0.0" width="732" height="35"/>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                                         <textInputTraits key="textInputTraits"/>
                                                                     </textField>
@@ -3865,7 +3825,6 @@ Only payments in cryptocurrency require additional AML checks on your public key
                                                                 <subviews>
                                                                     <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select cryptocurrency" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eOA-Hi-Mmw">
                                                                         <rect key="frame" x="5" y="0.0" width="359" height="35"/>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                                         <textInputTraits key="textInputTraits"/>
                                                                     </textField>
@@ -3895,7 +3854,6 @@ Only payments in cryptocurrency require additional AML checks on your public key
                                                                 <subviews>
                                                                     <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Verify Key" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hPj-et-Mko">
                                                                         <rect key="frame" x="5" y="0.0" width="359" height="35"/>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                                         <textInputTraits key="textInputTraits"/>
                                                                     </textField>
@@ -4066,6 +4024,7 @@ Only payments in cryptocurrency require additional AML checks on your public key
                                 </constraints>
                             </scrollView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="SCU-1h-6xZ"/>
                         <color key="backgroundColor" red="0.1176470588" green="0.066666666669999999" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="SCU-1h-6xZ" firstAttribute="trailing" secondItem="v1d-AU-0kb" secondAttribute="trailing" id="2Hw-wz-cqt"/>
@@ -4080,7 +4039,6 @@ Only payments in cryptocurrency require additional AML checks on your public key
                             <constraint firstItem="SCU-1h-6xZ" firstAttribute="bottom" secondItem="v1d-AU-0kb" secondAttribute="bottom" id="vMe-1J-BnE"/>
                             <constraint firstItem="SCU-1h-6xZ" firstAttribute="bottom" secondItem="E9h-Vv-wH0" secondAttribute="bottom" id="vTs-0D-jlq"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="SCU-1h-6xZ"/>
                     </view>
                     <navigationItem key="navigationItem" id="AmR-ag-pDs"/>
                     <size key="freeformSize" width="768" height="3000"/>
@@ -4090,6 +4048,9 @@ Only payments in cryptocurrency require additional AML checks on your public key
             <point key="canvasLocation" x="4754" y="2467"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="bpg-aq-NGC"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="btn_back" width="30" height="30"/>
         <image name="btn_menu" width="30" height="30"/>
@@ -4097,7 +4058,4 @@ Only payments in cryptocurrency require additional AML checks on your public key
         <image name="ic_tick" width="30" height="30"/>
         <image name="ic_tick_gr" width="30" height="30"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="bpg-aq-NGC"/>
-    </inferredMetricsTieBreakers>
 </document>

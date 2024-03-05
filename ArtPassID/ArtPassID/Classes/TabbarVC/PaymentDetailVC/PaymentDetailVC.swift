@@ -43,7 +43,7 @@ class PaymentDetailVC: UIViewController {
         self.viewSuccess.isHidden = true
         self.lblNoteCheck1.text = "I will purchase as the principal buyer of the artwork and pay with my own funds."
         if isMoreSetting {
-            self.lblTitleNavi.text = "1-CLICK COMPLIANCE"
+            self.lblTitleNavi.text = "1-CLICK COLLECT"
             self.lblDesc.text = "The information contained herein does not constitute in any way a binding sales or purchase agreement or any other sales or purchase obligation whatsoever. Your information will remain available to the AMP (Art Market Participant), prior to the sales transaction, after which it may becomes part of the compliant Transaction Report in the event of a successful sale. This information will be removed from our servers in the event that the transaction is not completed."
             
             self.lblTitleNote.text = "I DECLARE THAT IN THE EVENT OF A PURCHASE:"
@@ -88,7 +88,7 @@ class PaymentDetailVC: UIViewController {
             }
             
             if self.isAmpAsBuyer || self.isAmpAsSeller {
-                self.lblDesc.text = "This buyer report is compiled by artpass ID to comply with AMLD5 regulated purchases of works of art. The information contained herein does not constitute in any way a binding sales or purchase agreement or any other sales or purchase obligation whatsoever. Your information will remain available to the AMP (Art Market Participant), prior to the sales transaction, after which it may becomes part of the compliant Transaction Report in the event of a successful sale. This information will be removed from our servers in the event that the transaction is not completed."
+                self.lblDesc.text = "This buyer report is compiled by iPass ID to comply with AMLD5 regulated purchases of works of art. The information contained herein does not constitute in any way a binding sales or purchase agreement or any other sales or purchase obligation whatsoever. Your information will remain available to the AMP (Art Market Participant), prior to the sales transaction, after which it may becomes part of the compliant Transaction Report in the event of a successful sale. This information will be removed from our servers in the event that the transaction is not completed."
             }
         }
         

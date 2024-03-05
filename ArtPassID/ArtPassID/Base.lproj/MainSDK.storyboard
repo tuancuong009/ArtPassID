@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="I0c-68-3Fo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="I0c-68-3Fo">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,7 +26,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWo-um-OZM">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWo-um-OZM">
                                 <rect key="frame" x="46" y="268.5" width="283" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Obf-gW-QdO"/>
@@ -94,7 +93,7 @@
                                     <constraint firstAttribute="height" constant="83" id="mZL-IH-JWh"/>
                                 </constraints>
                             </stackView>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9sA-2d-9CD">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9sA-2d-9CD">
                                 <rect key="frame" x="46" y="328" width="283" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="m7g-O8-z3D"/>
@@ -108,7 +107,7 @@
                                 </connections>
                             </button>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wep-SS-t7R">
-                                <rect key="frame" x="20" y="311" width="335" height="45"/>
+                                <rect key="frame" x="20" y="321" width="335" height="45"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gWY-Cn-3xA" customClass="UIViewX" customModule="artplus" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="45"/>
@@ -119,7 +118,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcb-ij-xs6">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcb-ij-xs6">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="45"/>
                                         <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="16"/>
                                         <state key="normal" title="ID/PASSPORT">
@@ -149,8 +148,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NMw-g4-uJA">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="642"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="artpass ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cl-Dn-0fD">
-                                                <rect key="frame" x="157" y="10" width="61.5" height="18"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPass ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cl-Dn-0fD">
+                                                <rect key="frame" x="164" y="10" width="47.5" height="18"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="18" id="udm-g0-Pt7"/>
                                                 </constraints>
@@ -158,7 +157,7 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set up your artpass ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ySb-wF-LPa">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set up your iPass ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ySb-wF-LPa">
                                                 <rect key="frame" x="20" y="80" width="335" height="26"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="22"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -184,7 +183,7 @@
                                                             <action selector="doTick1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eUI-cW-Fkq"/>
                                                         </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I hereby authorize artpass ID to read my ID (front and back side)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eAh-2A-hIc">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I hereby authorize iPass ID to read my ID (front and back side)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eAh-2A-hIc">
                                                         <rect key="frame" x="60" y="10" width="295" height="37.5"/>
                                                         <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="16"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -215,7 +214,7 @@
                                                             <action selector="doTick2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vp6-aD-VTr"/>
                                                         </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I hereby authorize artpass ID to an identification process based on a video selfie." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="DPr-Tu-Amj">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I hereby authorize iPass ID to an identification process based on a video selfie." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="DPr-Tu-Amj">
                                                         <rect key="frame" x="60" y="10" width="295" height="56.5"/>
                                                         <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="16"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -283,7 +282,7 @@ Your basic identity information that we process is for your CDD (Customer Due Di
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="unM-dt-rhW">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="unM-dt-rhW">
                                                         <rect key="frame" x="0.0" y="0.0" width="335" height="45"/>
                                                         <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="16"/>
                                                         <state key="normal" title="SCAN ID / PASSPORT">
@@ -307,7 +306,7 @@ Your basic identity information that we process is for your CDD (Customer Due Di
                                                     <constraint firstAttribute="height" constant="45" id="zmL-Eb-TJL"/>
                                                 </constraints>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6VK-eC-SD3">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6VK-eC-SD3">
                                                 <rect key="frame" x="179" y="486" width="110" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="110" id="GiP-69-Ezp"/>
@@ -385,6 +384,7 @@ Your basic identity information that we process is for your CDD (Customer Due Di
                                 </constraints>
                             </scrollView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="9sA-2d-9CD" firstAttribute="top" secondItem="UWo-um-OZM" secondAttribute="bottom" constant="29.5" id="2IX-IA-qZt"/>
@@ -407,7 +407,6 @@ Your basic identity information that we process is for your CDD (Customer Due Di
                             <constraint firstAttribute="trailingMargin" secondItem="xDe-A1-eVa" secondAttribute="trailing" constant="10" id="uSu-vv-EdY"/>
                             <constraint firstItem="hYY-Pn-RvX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wdM-04-eho"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="bwg-Bu-cai"/>
                     <connections>
@@ -435,9 +434,9 @@ Your basic identity information that we process is for your CDD (Customer Due Di
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eZu-Xt-ruQ">
-                                <rect key="frame" x="9.5" y="245" width="356" height="259"/>
+                                <rect key="frame" x="9.5" y="265" width="356" height="239"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elp-B2-bZ2">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elp-B2-bZ2">
                                 <rect key="frame" x="9.5" y="553" width="356" height="32"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
                                 <state key="normal" title="Confirm">
@@ -447,7 +446,7 @@ Your basic identity information that we process is for your CDD (Customer Due Di
                                     <action selector="confirmTapped:" destination="c4w-HX-fEr" eventType="touchUpInside" id="QAp-fH-2bD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIf-1j-4Yd">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIf-1j-4Yd">
                                 <rect key="frame" x="9.5" y="598" width="356" height="32"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
                                 <state key="normal" title="Retry">
@@ -458,7 +457,7 @@ Your basic identity information that we process is for your CDD (Customer Due Di
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2nz-cZ-6pa">
-                                <rect key="frame" x="9.5" y="0.0" width="356" height="215"/>
+                                <rect key="frame" x="9.5" y="20" width="356" height="215"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -468,6 +467,7 @@ Your basic identity information that we process is for your CDD (Customer Due Di
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Xa0-KI-nSF"/>
                         <color key="backgroundColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="2nz-cZ-6pa" firstAttribute="top" secondItem="Xa0-KI-nSF" secondAttribute="top" id="4mM-Hk-Ecf"/>
@@ -485,7 +485,6 @@ Your basic identity information that we process is for your CDD (Customer Due Di
                             <constraint firstItem="2nz-cZ-6pa" firstAttribute="centerX" secondItem="Xa0-KI-nSF" secondAttribute="centerX" id="ghN-DJ-CZO"/>
                             <constraint firstItem="2nz-cZ-6pa" firstAttribute="width" secondItem="eZu-Xt-ruQ" secondAttribute="width" id="nvf-GC-E13"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Xa0-KI-nSF"/>
                     </view>
                     <connections>
                         <outlet property="confirmButton" destination="elp-B2-bZ2" id="zDh-uH-xnl"/>
@@ -511,15 +510,15 @@ Your basic identity information that we process is for your CDD (Customer Due Di
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kBt-vV-KXg">
-                                <rect key="frame" x="28" y="45" width="133" height="84"/>
+                                <rect key="frame" x="28" y="65" width="133" height="84"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9uh-bf-0V9">
-                                <rect key="frame" x="215" y="45" width="133" height="84"/>
+                                <rect key="frame" x="215" y="65" width="133" height="84"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bqP-wl-KD7">
-                                <rect key="frame" x="28" y="137" width="63" height="68"/>
+                                <rect key="frame" x="28" y="157" width="63" height="68"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="63" id="WUw-9w-GX4"/>
@@ -527,7 +526,7 @@ Your basic identity information that we process is for your CDD (Customer Due Di
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wUH-sD-kw4">
-                                <rect key="frame" x="28" y="213" width="129" height="47"/>
+                                <rect key="frame" x="28" y="233" width="129" height="47"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="k1b-3z-ONa"/>
@@ -535,11 +534,11 @@ Your basic identity information that we process is for your CDD (Customer Due Di
                                 </constraints>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mOV-HG-dhW">
-                                <rect key="frame" x="28" y="285" width="331" height="362"/>
+                                <rect key="frame" x="28" y="305" width="331" height="342"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ResultCell" id="bWj-qc-3zH">
-                                        <rect key="frame" x="0.0" y="28" width="331" height="44"/>
+                                        <rect key="frame" x="0.0" y="50" width="331" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bWj-qc-3zH" id="UQx-LR-Jng">
                                             <rect key="frame" x="0.0" y="0.0" width="331" height="44"/>
@@ -553,7 +552,7 @@ Your basic identity information that we process is for your CDD (Customer Due Di
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCY-ix-IzS">
-                                <rect key="frame" x="10" y="8" width="60" height="30"/>
+                                <rect key="frame" x="10" y="28" width="60" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="01k-0C-JBR"/>
                                 </constraints>
@@ -563,12 +562,13 @@ Your basic identity information that we process is for your CDD (Customer Due Di
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MY VAULT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmX-lH-bsG">
-                                <rect key="frame" x="149" y="13" width="77.5" height="20"/>
+                                <rect key="frame" x="149" y="33" width="77.5" height="20"/>
                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="cqy-Xt-wNV"/>
                         <color key="backgroundColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="dmX-lH-bsG" firstAttribute="centerX" secondItem="cqy-Xt-wNV" secondAttribute="centerX" id="6xp-Cu-sFU"/>
@@ -592,7 +592,6 @@ Your basic identity information that we process is for your CDD (Customer Due Di
                             <constraint firstItem="bqP-wl-KD7" firstAttribute="leading" secondItem="wUH-sD-kw4" secondAttribute="leading" id="tuC-Wc-5iE"/>
                             <constraint firstItem="dmX-lH-bsG" firstAttribute="centerY" secondItem="LCY-ix-IzS" secondAttribute="centerY" id="v0P-Hj-J6x"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="cqy-Xt-wNV"/>
                     </view>
                     <connections>
                         <outlet property="backImage" destination="9uh-bf-0V9" id="VDC-yF-czN"/>
@@ -616,9 +615,9 @@ Your basic identity information that we process is for your CDD (Customer Due Di
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f0x-4t-Xsu">
-                                <rect key="frame" x="9.5" y="245" width="356" height="259"/>
+                                <rect key="frame" x="9.5" y="265" width="356" height="239"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xux-Bm-Hn7">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xux-Bm-Hn7">
                                 <rect key="frame" x="168" y="596" width="39" height="32"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
                                 <state key="normal" title="Retry">
@@ -629,7 +628,7 @@ Your basic identity information that we process is for your CDD (Customer Due Di
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Could not classify the image" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeU-cz-tYc">
-                                <rect key="frame" x="9.5" y="0.0" width="356" height="215"/>
+                                <rect key="frame" x="9.5" y="20" width="356" height="215"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -639,6 +638,7 @@ Your basic identity information that we process is for your CDD (Customer Due Di
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="mqk-ee-VhU"/>
                         <color key="backgroundColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="eeU-cz-tYc" firstAttribute="top" secondItem="mqk-ee-VhU" secondAttribute="top" id="3Lu-f4-biQ"/>
@@ -652,7 +652,6 @@ Your basic identity information that we process is for your CDD (Customer Due Di
                             <constraint firstItem="f0x-4t-Xsu" firstAttribute="centerY" secondItem="mqk-ee-VhU" secondAttribute="centerY" constant="41" id="nDN-aA-Q0G"/>
                             <constraint firstItem="f0x-4t-Xsu" firstAttribute="centerX" secondItem="mqk-ee-VhU" secondAttribute="centerX" id="rpO-JB-rto"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="mqk-ee-VhU"/>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="f0x-4t-Xsu" id="NOY-bw-ci7"/>
@@ -670,6 +669,7 @@ Your basic identity information that we process is for your CDD (Customer Due Di
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="I0c-68-3Fo" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="G0S-WV-sIx">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

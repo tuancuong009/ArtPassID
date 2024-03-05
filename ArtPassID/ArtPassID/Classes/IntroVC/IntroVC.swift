@@ -16,7 +16,7 @@ class IntroVC: UIViewController {
         super.viewDidLoad()
         cltIntro.register(UINib.init(nibName: "IntroCollect", bundle: nil), forCellWithReuseIdentifier: "IntroCollect")
         cltIntro.register(UINib.init(nibName: "IntroCollectFirst", bundle: nil), forCellWithReuseIdentifier: "IntroCollectFirst")
-        self.pageContrl.numberOfPages = 4
+        self.pageContrl.numberOfPages = 5
         // Do any additional setup after loading the view.
     }
     
@@ -68,7 +68,7 @@ extension IntroVC: UICollectionViewDataSource, UICollectionViewDelegate, UIColle
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return 5
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
@@ -90,15 +90,21 @@ extension IntroVC: UICollectionViewDataSource, UICollectionViewDelegate, UIColle
             }
             else if indexPath.row == 2 {
                 collect.lbltitle.text = "Fast Onboarding"
-                collect.lblDesc.text = "In only takes a few minutes to get your artpass ID."
+                collect.lblDesc.text = "In only takes a few minutes to get your iPass ID."
                 collect.lblR.isHidden = true
                 collect.imgCell.image = UIImage.init(named: "slide1")
             }
             else if indexPath.row == 3 {
                 collect.lbltitle.text = "Secure Sharing"
-                collect.lblDesc.text = "artpass ID members can instantly connect with each other and securely share their CDD Report with 1-Click."
+                collect.lblDesc.text = "iPass ID members can instantly connect with each other and securely share their CDD Report with 1-Click."
                 collect.lblR.isHidden = true
                 collect.imgCell.image = UIImage.init(named: "slide2")
+            }
+            else if indexPath.row == 4 {
+                collect.lbltitle.text = "Transaction Report"
+                collect.lblDesc.text = "Creating AML compliant Transaction Reports in one private and secure place."
+                collect.lblR.isHidden = true
+                collect.imgCell.image = UIImage.init(named: "slide4")
             }
             collect.configLabel()
             return collect

@@ -59,7 +59,7 @@ extension MyPassIDVC
                 {
                     if let code = connectRp.object(forKey: "code") as? String
                     {
-                        self.lblConnectID.text = "MY ARTPASS ID #\(code)"
+                        self.lblConnectID.text = "MY IPASS ID #\(code)"
                     }
                 }
             }

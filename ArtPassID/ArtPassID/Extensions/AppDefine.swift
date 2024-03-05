@@ -8,7 +8,7 @@
 
 import UIKit
 import SwiftyStoreKit
-let APP_NAME = "artpass ID"
+let APP_NAME = "iPass ID"
 let APP_DELEGATE = UIApplication.shared.delegate as! AppDelegate
 let KACUANT = "kacuant"
 let kImageFront = "kImageFront"
