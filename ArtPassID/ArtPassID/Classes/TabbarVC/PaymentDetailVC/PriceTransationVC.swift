@@ -194,7 +194,7 @@ class PriceTransationVC: UIViewController {
             }
         }
        
-//        let url = URL(string: "https://artpass.id/api/data/fromios")
+//        let url = URL(string: "https://ipass.id/api/data/fromios")
 //        var request = URLRequest(url: url!)
 //        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
 //        request.httpMethod = "POST"

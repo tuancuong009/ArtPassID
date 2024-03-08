@@ -7,10 +7,9 @@
 //
 
 import UIKit
-//PRO: let URL_SERVER = "https://artpass.id/api/"
-// DEV: let URL_SERVER = "https://dev.artpass.id/api/"
-let URL_SERVER = "https://artpass.id/api/"
-let URL_AVARTA = "https://artpass.id"
+//PRO: let URL_SERVER = "https://ipass.id/api/"
+let URL_SERVER = "https://ipass.id/api/"
+let URL_AVARTA = "https://ipass.id"
 let URL_REGISTER = "\(URL_SERVER)v2/signup"
 let URL_PHONE_CHECK = "\(URL_SERVER)nextmo/phone-check"
 let URL_PHONE_VERIFY = "\(URL_SERVER)nextmo/phone-verify"

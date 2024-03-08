@@ -1618,7 +1618,7 @@ class ApiHelper {
         let header: HTTPHeaders    = ["Content-Type": "application/x-www-form-urlencoded", "Authorization": "Bearer \(UserDefaults.standard.value(forKey: kToken) as? String ?? "")"]
         print(header)
         //print("PARAM --->",param)
-        manager.request(URL.init(string: "https://artpass.id/api/data/fromios")!, method: .post, parameters:param,  encoding: URLEncoding.default, headers: header)
+        manager.request(URL.init(string: "https://ipass.id/api/data/fromios")!, method: .post, parameters:param,  encoding: URLEncoding.default, headers: header)
                .responseJSON { response in
                 print(response)
                   Common.hideBusy()
@@ -1643,7 +1643,7 @@ class ApiHelper {
         let header: HTTPHeaders    = ["Content-Type": "application/x-www-form-urlencoded", "Authorization": "Bearer \(UserDefaults.standard.value(forKey: kToken) as? String ?? "")"]
         print(header)
         //print("PARAM --->",param)
-        manager.request(URL.init(string: "https://artpass.id/api/data/fromios")!, method: .post, parameters:param as! Parameters,  encoding: URLEncoding.default, headers: header)
+        manager.request(URL.init(string: "https://ipass.id/api/data/fromios")!, method: .post, parameters:param as! Parameters,  encoding: URLEncoding.default, headers: header)
                .responseJSON { response in
                 print(response)
                   Common.hideBusy()

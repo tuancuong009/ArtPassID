@@ -91,7 +91,7 @@ class DeleteAccountVC: UIViewController, MFMailComposeViewControllerDelegate {
         }
     }
     private func openWebView(){
-        if let url = URL.init(string: "https://artpass.id/account_termination.pdf"){
+        if let url = URL.init(string: "https://ipass.id/account_termination.pdf"){
             let vc = SFSafariViewController.init(url: url)
             self.present(vc, animated: true) {
                 

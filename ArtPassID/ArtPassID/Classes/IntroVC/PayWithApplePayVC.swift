@@ -112,10 +112,10 @@ class PayWithApplePayVC: BaseVC {
     }
     
     @IBAction func doTerm(_ sender: Any) {
-        self.openSafari("https://artpass.id/terms/")
+        self.openSafari("https://ipass.id/terms/")
     }
     @IBAction func doPrivacy(_ sender: Any) {
-         self.openSafari("https://artpass.id/privacy")
+         self.openSafari("https://ipass.id/privacy")
     }
     
 }
