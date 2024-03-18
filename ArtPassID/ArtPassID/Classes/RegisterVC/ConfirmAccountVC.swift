@@ -22,12 +22,33 @@ class ConfirmAccountVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBOutlet weak var imgQrCode: UIImageView!
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         self.imgAvatar.layer.cornerRadius = self.imgAvatar.frame.size.width/2
         self.imgAvatar.layer.masksToBounds = true
     }
+    func createQRFromString(_ str: String, size: CGSize) -> UIImage {
+        let stringData = str.data(using: .utf8)
 
+      let qrFilter = CIFilter(name: "CIQRCodeGenerator")!
+      qrFilter.setValue(stringData, forKey: "inputMessage")
+      qrFilter.setValue("H", forKey: "inputCorrectionLevel")
+
+      let minimalQRimage = qrFilter.outputImage!
+      // NOTE that a QR code is always square, so minimalQRimage..width === .height
+      let minimalSideLength = minimalQRimage.extent.width
+
+      let smallestOutputExtent = (size.width < size.height) ? size.width : size.height
+      let scaleFactor = smallestOutputExtent / minimalSideLength
+      let scaledImage = minimalQRimage.transformed(
+        by: CGAffineTransform(scaleX: scaleFactor, y: scaleFactor))
+
+      return UIImage(ciImage: scaledImage,
+                     scale: UIScreen.main.scale,
+                     orientation: .up)
+    }
+    
     func checkLoginAuth(){
         context = LAContext()
 
@@ -170,7 +191,7 @@ extension ConfirmAccountVC
             {
                 self.view.isHidden = false
                 APP_DELEGATE.profileObj = profileObj
-                self.lblMessage.text = "HEY \(profileObj.fname), IS THAT YOU?"
+                self.lblMessage.text = profileObj.fname
                 self.btnContinue.setTitle("CONTINUE AS \(profileObj.fname)", for: .normal)
                 if profileObj.avatar.count > 0
                 {
@@ -179,7 +200,8 @@ extension ConfirmAccountVC
                 if UserDefaults.standard.bool(forKey: kFaceIdOrTouchId) {
                     self.checkLoginAuth()
                 }
-                
+                let url = "\(URL_AVARTA)/connectreport/\(profileObj._id)"
+                self.imgQrCode.image = self.createQRFromString(url, size: CGSize(width: self.imgQrCode.frame.size.width * 2, height: self.imgQrCode.frame.size.height * 2))
             }
             else{
                 UserDefaults.standard.removeObject(forKey: kToken)
