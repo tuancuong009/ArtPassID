@@ -176,8 +176,14 @@ class ConfirmAccountVC: UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     @IBAction func doContinue(_ sender: Any) {
-        let vc = STORYBOARD_MAIN.instantiateViewController(withIdentifier: "ConfirmPasswordVC") as! ConfirmPasswordVC
-        self.navigationController?.pushViewController(vc, animated: true)
+        if UserDefaults.standard.bool(forKey: kFaceIdOrTouchId) {
+            self.checkLoginAuth()
+        }
+        else{
+            let vc = STORYBOARD_MAIN.instantiateViewController(withIdentifier: "ConfirmPasswordVC") as! ConfirmPasswordVC
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        
     }
 }
 extension ConfirmAccountVC
@@ -197,9 +203,7 @@ extension ConfirmAccountVC
                 {
                     Common.loadAvatarFromServer(profileObj.avatar, self.imgAvatar)
                 }
-                if UserDefaults.standard.bool(forKey: kFaceIdOrTouchId) {
-                    self.checkLoginAuth()
-                }
+               
                 let url = "\(URL_AVARTA)/connectreport/\(profileObj._id)"
                 self.imgQrCode.image = self.createQRFromString(url, size: CGSize(width: self.imgQrCode.frame.size.width * 2, height: self.imgQrCode.frame.size.height * 2))
             }
