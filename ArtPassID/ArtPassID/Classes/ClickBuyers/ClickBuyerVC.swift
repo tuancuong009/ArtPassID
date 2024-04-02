@@ -18,8 +18,9 @@ class ClickBuyerVC: UIViewController {
     var qrData: QRData? = nil {
         didSet {
             if qrData != nil {
+                print("qrData!.codeString--->",qrData!.codeString)
                 if qrData!.codeString!.isValidURL {
-                    if !qrData!.codeString!.contains("artpass.id/transaction-amp/") {
+                    if !qrData!.codeString!.contains("ipass.id/transaction-amp/") {
                         let alert = UIAlertController.init(title: APP_NAME, message: "QR-Code is invalid", preferredStyle: .alert)
                         let ok = UIAlertAction.init(title: "OK", style: .cancel) { (action) in
                             if !self.scannerView.isRunning {

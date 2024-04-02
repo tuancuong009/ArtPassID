@@ -17,7 +17,7 @@ class DeleteAccountVC: UIViewController, MFMailComposeViewControllerDelegate {
 
         var arrTribute = NSMutableAttributedString.init()
         arrTribute = arrTribute.normalColor("For AML Compliance you can only request to delete your account by email at ", .white)
-        arrTribute = arrTribute.normalColor("accounts@artpass.id", Common.hexStringToUIColor("367AF6"))
+        arrTribute = arrTribute.normalColor("accounts@ipass.id", Common.hexStringToUIColor("367AF6"))
         arrTribute = arrTribute.normalColor(". The Art Market Participants you transacted with in the past will not be able to delete your information. Part of their AML compliance obligations is to securely store the KYC information from their customers for 5 or 10 years, depending on the region. ", .white)
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineSpacing = 3
@@ -35,10 +35,10 @@ class DeleteAccountVC: UIViewController, MFMailComposeViewControllerDelegate {
     @objc func handleTapOnLabel(_ gesture: UITapGestureRecognizer) {
         let text = "accounts@artpass.id."
        
-        let privacyRange = (text as NSString).range(of: "accounts@artpass.id.")
+        let privacyRange = (text as NSString).range(of: "accounts@ipass.id.")
 
         if gesture.didTapAttributedTextInLabel(label: lblMessage, inRange: privacyRange) {
-            let recipientEmail = "accounts@artpass.id"
+            let recipientEmail = "accounts@ipass.id"
             let subject = ""
             let body = ""
 
@@ -73,7 +73,7 @@ class DeleteAccountVC: UIViewController, MFMailComposeViewControllerDelegate {
         self.openWebView()
     }
     @IBAction func doEmail(_ sender: Any) {
-        let recipientEmail = "accounts@artpass.id"
+        let recipientEmail = "accounts@ipass.id"
         let subject = ""
         let body = ""
 
