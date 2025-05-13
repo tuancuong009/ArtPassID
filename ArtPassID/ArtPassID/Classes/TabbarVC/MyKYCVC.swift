@@ -41,5 +41,9 @@ class MyKYCVC: BaseVC {
        // let resultViewController = storyBoard.instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
        // self.navigationController?.pushViewController(resultViewController, animated: true)
     }
+    @IBAction func doMyipass(_ sender: Any) {
+        let vc = STORYBOARD_MAIN.instantiateViewController(withIdentifier: "MyPassIDVC") as! MyPassIDVC
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     
 }

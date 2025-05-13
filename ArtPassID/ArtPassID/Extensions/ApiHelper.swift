@@ -2768,43 +2768,7 @@ class ApiHelper {
                    break
                }
            }
-        /*
-            print("PARAM -->",para)
-            print("URL -->",URL_UPDATE_PROFILE)
-        let header: HTTPHeaders    = [ "Authorization": "Bearer \(UserDefaults.standard.value(forKey: kToken) as? String ?? "")"]
-           manager.request(URL.init(string: URL_UPDATE_PROFILE)!, method: .post, parameters: para,  encoding: URLEncoding.default, headers: header)
-               .responseJSON { response in
-                   print(response)
-                   switch(response.result) {
-                   case .success(_):
-                       
-                       if let val = response.value as? NSDictionary
-                       {
-                           print(val)
-                          if let error_text = val.object(forKey: "error") as? NSDictionary {
-                            complete(false, ErrorManager.processError(error: nil, errorCode: nil, errorMsg: error_text.object(forKey: "message") as? String ?? ""))
-                           }
-                           else{
-                                if let status = val.object(forKey: "status") as? Int
-                                {
-                                    if  status == 200 {
-                                       complete(true, nil)
-                                    }
-                                    else{
-                                        complete(false, ErrorManager.processError(error: nil, errorCode: nil, errorMsg: val.object(forKey: "message") as? String ?? ""))
-                                    }
-                                }
-                                else{
-                                    complete(false, ErrorManager.processError(error: nil, errorCode: nil, errorMsg: val.object(forKey: "message") as? String ?? ""))
-                                }
-                           }
-                       }
-                       break
-                   case .failure(let error):
-                       Common.hideBusy()
-                       complete(false, ErrorManager.processError(error: error))
-                   }
-           }*/
+       
     }
     
     
@@ -2838,6 +2802,41 @@ class ApiHelper {
                                 else{
                                     complete(false, ErrorManager.processError(error: nil, errorCode: nil, errorMsg: val.object(forKey: "message") as? String ?? ""))
                                 }
+                           }
+                       }
+                       break
+                   case .failure(let error):
+                       Common.hideBusy()
+                       complete(false, ErrorManager.processError(error: error))
+                   }
+           }
+    }
+    
+    
+    func createPersonOnboard(_ param: Parameters, complete:@escaping (_ success: Bool, _ errer: ErrorModel?) ->Void)
+    {
+        Common.showBusy()
+        let header: HTTPHeaders    = ["Content-Type": "application/x-www-form-urlencoded", "Authorization": "Bearer \(UserDefaults.standard.value(forKey: kToken) as? String ?? "")"]
+        print(header)
+        print("https://artpass.id/link/private/create-person-onboard")
+        print(param)
+        manager.request(URL.init(string: "https://artpass.id/link/private/create-person-onboard")!, method: .post, parameters:param,  encoding: URLEncoding.default, headers: header)
+               .responseJSON { response in
+                  Common.hideBusy()
+                   switch(response.result) {
+                   case .success(_):
+                       
+                       if let val = response.value as? NSDictionary
+                       {
+                           print(val)
+                          if let error_text = val.object(forKey: "error") as? NSDictionary {
+                            complete(false, ErrorManager.processError(error: nil, errorCode: nil, errorMsg: error_text.object(forKey: "message") as? String ?? ""))
+                           }
+                           else{
+                               if let status = val.object(forKey: "message") as? String
+                               {
+                                   complete(false, ErrorManager.processError(error: nil, errorCode: nil, errorMsg: val.object(forKey: "message") as? String ?? ""))
+                               }
                            }
                        }
                        break

@@ -169,6 +169,25 @@
 		7892C3C12269B4D4009CEE61 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7892C3BF2269B4D3009CEE61 /* Main_iPad.storyboard */; };
 		884D31252B96B53300159A7B /* Gilmer-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 884D31242B96B53300159A7B /* Gilmer-Regular.otf */; };
 		884D31272B96B56700159A7B /* Gilmer-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 884D31262B96B56700159A7B /* Gilmer-Bold.otf */; };
+		884F38B12DD3262D008F7434 /* RiskSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884F38B02DD3262D008F7434 /* RiskSearchViewController.swift */; };
+		884F38B42DD32818008F7434 /* DynamsoftCameraEnhancer in Frameworks */ = {isa = PBXBuildFile; productRef = 884F38B32DD32818008F7434 /* DynamsoftCameraEnhancer */; };
+		884F38B62DD32818008F7434 /* DynamsoftCaptureVisionRouter in Frameworks */ = {isa = PBXBuildFile; productRef = 884F38B52DD32818008F7434 /* DynamsoftCaptureVisionRouter */; };
+		884F38B82DD32818008F7434 /* DynamsoftCodeParser in Frameworks */ = {isa = PBXBuildFile; productRef = 884F38B72DD32818008F7434 /* DynamsoftCodeParser */; };
+		884F38BA2DD32818008F7434 /* DynamsoftCodeParserDedicator in Frameworks */ = {isa = PBXBuildFile; productRef = 884F38B92DD32818008F7434 /* DynamsoftCodeParserDedicator */; };
+		884F38BC2DD32818008F7434 /* DynamsoftCore in Frameworks */ = {isa = PBXBuildFile; productRef = 884F38BB2DD32818008F7434 /* DynamsoftCore */; };
+		884F38BE2DD32968008F7434 /* DynamsoftMRZScannerBundle in Frameworks */ = {isa = PBXBuildFile; productRef = 884F38BD2DD32968008F7434 /* DynamsoftMRZScannerBundle */; };
+		884F38C02DD32975008F7434 /* DynamsoftCameraEnhancer in Frameworks */ = {isa = PBXBuildFile; productRef = 884F38BF2DD32975008F7434 /* DynamsoftCameraEnhancer */; };
+		884F38C22DD32975008F7434 /* DynamsoftCaptureVisionRouter in Frameworks */ = {isa = PBXBuildFile; productRef = 884F38C12DD32975008F7434 /* DynamsoftCaptureVisionRouter */; };
+		884F38C42DD32975008F7434 /* DynamsoftCodeParser in Frameworks */ = {isa = PBXBuildFile; productRef = 884F38C32DD32975008F7434 /* DynamsoftCodeParser */; };
+		884F38C62DD32975008F7434 /* DynamsoftCodeParserDedicator in Frameworks */ = {isa = PBXBuildFile; productRef = 884F38C52DD32975008F7434 /* DynamsoftCodeParserDedicator */; };
+		884F38C82DD32975008F7434 /* DynamsoftCore in Frameworks */ = {isa = PBXBuildFile; productRef = 884F38C72DD32975008F7434 /* DynamsoftCore */; };
+		884F38CA2DD32975008F7434 /* DynamsoftImageProcessing in Frameworks */ = {isa = PBXBuildFile; productRef = 884F38C92DD32975008F7434 /* DynamsoftImageProcessing */; };
+		884F38CC2DD32976008F7434 /* DynamsoftLabelRecognizer in Frameworks */ = {isa = PBXBuildFile; productRef = 884F38CB2DD32976008F7434 /* DynamsoftLabelRecognizer */; };
+		884F38CE2DD32976008F7434 /* DynamsoftLicense in Frameworks */ = {isa = PBXBuildFile; productRef = 884F38CD2DD32976008F7434 /* DynamsoftLicense */; };
+		884F38D02DD32976008F7434 /* DynamsoftMRZ in Frameworks */ = {isa = PBXBuildFile; productRef = 884F38CF2DD32976008F7434 /* DynamsoftMRZ */; };
+		884F38D22DD32976008F7434 /* DynamsoftMRZScannerBundle in Frameworks */ = {isa = PBXBuildFile; productRef = 884F38D12DD32976008F7434 /* DynamsoftMRZScannerBundle */; };
+		884F38D42DD32976008F7434 /* DynamsoftNeuralNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = 884F38D32DD32976008F7434 /* DynamsoftNeuralNetwork */; };
+		884F38D62DD32976008F7434 /* DynamsoftUtility in Frameworks */ = {isa = PBXBuildFile; productRef = 884F38D52DD32976008F7434 /* DynamsoftUtility */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -351,6 +370,7 @@
 		7892C3C02269B4D4009CEE61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		884D31242B96B53300159A7B /* Gilmer-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilmer-Regular.otf"; sourceTree = "<group>"; };
 		884D31262B96B56700159A7B /* Gilmer-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilmer-Bold.otf"; sourceTree = "<group>"; };
+		884F38B02DD3262D008F7434 /* RiskSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiskSearchViewController.swift; sourceTree = "<group>"; };
 		E4AE36D33275EE19DEC53A82 /* Pods-ArtPassID.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtPassID.release.xcconfig"; path = "Target Support Files/Pods-ArtPassID/Pods-ArtPassID.release.xcconfig"; sourceTree = "<group>"; };
 		E7CFD77F5DBC911F77CCA8E6 /* Pods_ArtPassID.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArtPassID.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -360,10 +380,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				884F38BA2DD32818008F7434 /* DynamsoftCodeParserDedicator in Frameworks */,
 				4877755527CDC8C500306C9F /* Pods_ArtPassID.framework in Frameworks */,
+				884F38C22DD32975008F7434 /* DynamsoftCaptureVisionRouter in Frameworks */,
+				884F38B42DD32818008F7434 /* DynamsoftCameraEnhancer in Frameworks */,
+				884F38CE2DD32976008F7434 /* DynamsoftLicense in Frameworks */,
+				884F38BC2DD32818008F7434 /* DynamsoftCore in Frameworks */,
+				884F38C02DD32975008F7434 /* DynamsoftCameraEnhancer in Frameworks */,
+				884F38C42DD32975008F7434 /* DynamsoftCodeParser in Frameworks */,
+				884F38CC2DD32976008F7434 /* DynamsoftLabelRecognizer in Frameworks */,
+				884F38B82DD32818008F7434 /* DynamsoftCodeParser in Frameworks */,
+				884F38D42DD32976008F7434 /* DynamsoftNeuralNetwork in Frameworks */,
+				884F38C62DD32975008F7434 /* DynamsoftCodeParserDedicator in Frameworks */,
+				884F38D02DD32976008F7434 /* DynamsoftMRZ in Frameworks */,
+				884F38C82DD32975008F7434 /* DynamsoftCore in Frameworks */,
+				884F38B62DD32818008F7434 /* DynamsoftCaptureVisionRouter in Frameworks */,
 				48B6CE832851DF60008E8F91 /* CloudKit.framework in Frameworks */,
 				4877755B27CDC8CB00306C9F /* SwiftyJSON.framework in Frameworks */,
+				884F38CA2DD32975008F7434 /* DynamsoftImageProcessing in Frameworks */,
 				4877755927CDC8C900306C9F /* StoreKit.framework in Frameworks */,
+				884F38BE2DD32968008F7434 /* DynamsoftMRZScannerBundle in Frameworks */,
+				884F38D22DD32976008F7434 /* DynamsoftMRZScannerBundle in Frameworks */,
+				884F38D62DD32976008F7434 /* DynamsoftUtility in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +422,7 @@
 		4838395023EAB5D400BA146F /* TabbarVC */ = {
 			isa = PBXGroup;
 			children = (
+				884F38AF2DD32620008F7434 /* RiskSearchVC */,
 				4897D29B24A9DD6B0006B462 /* ClickBuyers */,
 				487AC5BD246D50DE0092B697 /* PaymentDetailVC */,
 				48930AD42424BC4F008D247D /* Business */,
@@ -745,6 +784,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		884F38AF2DD32620008F7434 /* RiskSearchVC */ = {
+			isa = PBXGroup;
+			children = (
+				884F38B02DD3262D008F7434 /* RiskSearchViewController.swift */,
+			);
+			path = RiskSearchVC;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -792,6 +839,9 @@
 				Base,
 			);
 			mainGroup = 7887C48E2269628E002F66B5;
+			packageReferences = (
+				884F38B22DD32818008F7434 /* XCRemoteSwiftPackageReference "mrz-scanner-spm" */,
+			);
 			productRefGroup = 7887C4982269628F002F66B5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -966,6 +1016,7 @@
 				7887C4F722697D75002F66B5 /* ProfileVC.swift in Sources */,
 				7887C4F922697D85002F66B5 /* LoginVC.swift in Sources */,
 				7892C3BE2269AF00009CEE61 /* AppDefine.swift in Sources */,
+				884F38B12DD3262D008F7434 /* RiskSearchViewController.swift in Sources */,
 				48EFC1EA2404CE9400959747 /* ConfirmAccountVC.swift in Sources */,
 				48930ADB2424BC7F008D247D /* BusinessStep3VC.swift in Sources */,
 				484A49A5240E03EB001A98E7 /* MyProfileActivityVC.swift in Sources */,
@@ -1190,7 +1241,7 @@
 				CODE_SIGN_ENTITLEMENTS = ArtPassID/artplusDebug.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7CZRA7KNK3;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1205,7 +1256,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.9;
+				MARKETING_VERSION = 4.1;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.qtsvn.artpassid;
 				PRODUCT_NAME = artplus;
@@ -1227,7 +1278,7 @@
 				CODE_SIGN_ENTITLEMENTS = ArtPassID/artplusRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H5QVY2M337;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1242,7 +1293,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.9;
+				MARKETING_VERSION = 4.1;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.artpassid.artplus;
 				PRODUCT_NAME = artplus;
@@ -1276,6 +1327,110 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		884F38B22DD32818008F7434 /* XCRemoteSwiftPackageReference "mrz-scanner-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Dynamsoft/mrz-scanner-spm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		884F38B32DD32818008F7434 /* DynamsoftCameraEnhancer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 884F38B22DD32818008F7434 /* XCRemoteSwiftPackageReference "mrz-scanner-spm" */;
+			productName = DynamsoftCameraEnhancer;
+		};
+		884F38B52DD32818008F7434 /* DynamsoftCaptureVisionRouter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 884F38B22DD32818008F7434 /* XCRemoteSwiftPackageReference "mrz-scanner-spm" */;
+			productName = DynamsoftCaptureVisionRouter;
+		};
+		884F38B72DD32818008F7434 /* DynamsoftCodeParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 884F38B22DD32818008F7434 /* XCRemoteSwiftPackageReference "mrz-scanner-spm" */;
+			productName = DynamsoftCodeParser;
+		};
+		884F38B92DD32818008F7434 /* DynamsoftCodeParserDedicator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 884F38B22DD32818008F7434 /* XCRemoteSwiftPackageReference "mrz-scanner-spm" */;
+			productName = DynamsoftCodeParserDedicator;
+		};
+		884F38BB2DD32818008F7434 /* DynamsoftCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 884F38B22DD32818008F7434 /* XCRemoteSwiftPackageReference "mrz-scanner-spm" */;
+			productName = DynamsoftCore;
+		};
+		884F38BD2DD32968008F7434 /* DynamsoftMRZScannerBundle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 884F38B22DD32818008F7434 /* XCRemoteSwiftPackageReference "mrz-scanner-spm" */;
+			productName = DynamsoftMRZScannerBundle;
+		};
+		884F38BF2DD32975008F7434 /* DynamsoftCameraEnhancer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 884F38B22DD32818008F7434 /* XCRemoteSwiftPackageReference "mrz-scanner-spm" */;
+			productName = DynamsoftCameraEnhancer;
+		};
+		884F38C12DD32975008F7434 /* DynamsoftCaptureVisionRouter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 884F38B22DD32818008F7434 /* XCRemoteSwiftPackageReference "mrz-scanner-spm" */;
+			productName = DynamsoftCaptureVisionRouter;
+		};
+		884F38C32DD32975008F7434 /* DynamsoftCodeParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 884F38B22DD32818008F7434 /* XCRemoteSwiftPackageReference "mrz-scanner-spm" */;
+			productName = DynamsoftCodeParser;
+		};
+		884F38C52DD32975008F7434 /* DynamsoftCodeParserDedicator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 884F38B22DD32818008F7434 /* XCRemoteSwiftPackageReference "mrz-scanner-spm" */;
+			productName = DynamsoftCodeParserDedicator;
+		};
+		884F38C72DD32975008F7434 /* DynamsoftCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 884F38B22DD32818008F7434 /* XCRemoteSwiftPackageReference "mrz-scanner-spm" */;
+			productName = DynamsoftCore;
+		};
+		884F38C92DD32975008F7434 /* DynamsoftImageProcessing */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 884F38B22DD32818008F7434 /* XCRemoteSwiftPackageReference "mrz-scanner-spm" */;
+			productName = DynamsoftImageProcessing;
+		};
+		884F38CB2DD32976008F7434 /* DynamsoftLabelRecognizer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 884F38B22DD32818008F7434 /* XCRemoteSwiftPackageReference "mrz-scanner-spm" */;
+			productName = DynamsoftLabelRecognizer;
+		};
+		884F38CD2DD32976008F7434 /* DynamsoftLicense */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 884F38B22DD32818008F7434 /* XCRemoteSwiftPackageReference "mrz-scanner-spm" */;
+			productName = DynamsoftLicense;
+		};
+		884F38CF2DD32976008F7434 /* DynamsoftMRZ */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 884F38B22DD32818008F7434 /* XCRemoteSwiftPackageReference "mrz-scanner-spm" */;
+			productName = DynamsoftMRZ;
+		};
+		884F38D12DD32976008F7434 /* DynamsoftMRZScannerBundle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 884F38B22DD32818008F7434 /* XCRemoteSwiftPackageReference "mrz-scanner-spm" */;
+			productName = DynamsoftMRZScannerBundle;
+		};
+		884F38D32DD32976008F7434 /* DynamsoftNeuralNetwork */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 884F38B22DD32818008F7434 /* XCRemoteSwiftPackageReference "mrz-scanner-spm" */;
+			productName = DynamsoftNeuralNetwork;
+		};
+		884F38D52DD32976008F7434 /* DynamsoftUtility */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 884F38B22DD32818008F7434 /* XCRemoteSwiftPackageReference "mrz-scanner-spm" */;
+			productName = DynamsoftUtility;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7887C48F2269628E002F66B5 /* Project object */;
 }
