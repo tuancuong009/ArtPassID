@@ -22,7 +22,7 @@ class MyTradeConnectionVC: UIViewController {
         self.saveNotification()
         self.callAPIGetConnection()
         self.updateNotification()
-        
+        tblTrade.register(UINib(nibName: "InspectTableViewCell", bundle: nil), forCellReuseIdentifier: "InspectTableViewCell")
         // Do any additional setup after loading the view.
     }
     
@@ -251,6 +251,11 @@ extension MyTradeConnectionVC: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let mytraidObj = self.arrDatas[indexPath.row]
+        var dictInfo: NSDictionary?
+        dictInfo = mytraidObj.dict.object(forKey: "user_id") as? NSDictionary
+        if let dictInfo = dictInfo, let utype = dictInfo.object(forKey: "utype") as? String, utype == UTYPE_USER.PERSON{
+            return 352
+        }
         if mytraidObj.isConnect {
             if mytraidObj.isPending {
                 if !mytraidObj.sentRqs {
@@ -435,6 +440,16 @@ extension MyTradeConnectionVC: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let mytraidObj = self.arrDatas[indexPath.row]
+        var dictInfo: NSDictionary?
+        dictInfo = mytraidObj.dict.object(forKey: "user_id") as? NSDictionary
+        if let dictInfo = dictInfo, let utype = dictInfo.object(forKey: "utype") as? String, utype == UTYPE_USER.PERSON{
+            let cell = self.tblTrade.dequeueReusableCell(withIdentifier: "InspectTableViewCell") as! InspectTableViewCell
+            let obj = self.arrDatas[indexPath.row]
+            self.configCellInspect(cell, obj.dict, obj)
+            
+            return cell
+        }
+        
         if mytraidObj.isConnect {
             
             let cell = self.tblTrade.dequeueReusableCell(withIdentifier: "ConnectionCell") as! ConnectionCell
@@ -733,10 +748,61 @@ extension MyTradeConnectionVC: UITableViewDataSource, UITableViewDelegate{
  */
 
 extension MyTradeConnectionVC{
-   
+    func configCellInspect(_ cell: InspectTableViewCell,_ dict: NSDictionary ,_ activityObj: MyTrandObj)
+    {
+        if let connectTo = dict.object(forKey: "user_id") as? NSDictionary
+        {
+            if let avatar = connectTo.object(forKey: "avatar") as? String
+            {
+                Common.loadAvatarFromServer(avatar,cell.imgAvatar)
+            }
+            else{
+                cell.imgAvatar.image = nil
+            }
+            let fname = connectTo.object(forKey: "fname") as? String ?? ""
+            let lname = connectTo.object(forKey: "lname") as? String ?? ""
+            cell.lblFullName.text = "\(fname) \(lname)"
+            cell.lblUserName.text = "@\(connectTo.object(forKey: "username") as? String ?? "")"
+        }
+        if let requestedTime = activityObj.dict.object(forKey: "created_time") as? Double
+        {
+            let format = DateFormatter.init()
+            format.dateFormat = "MM/dd/yyyy"
+            let date = format.string(from: Date.init(milliseconds: Int64(requestedTime)))
+            cell.lblTime.text = "Connected on \(date)"
+        }
+        
+        cell.tapRemove = { [] in
+                 
+                if let _id = activityObj.dict.object(forKey: "_id") as? String
+                {
+                    let actType = self.getValueActype(_id)
+                    if self.arrIDNotification.contains(_id) && !actType.isEmpty
+                    {
+                        self.readNotification(_id)
+                    }
+                   
+                }
+            
+             self.deleteConnect(activityObj.dict.object(forKey: "req_id") as? String ?? "")
+        }
+        
+        
+        cell.tapReport = { [] in
+            var dictInfo: NSDictionary?
+            dictInfo =  activityObj.dict.object(forKey: "user_id") as? NSDictionary
+            if let dict = dictInfo{
+                if let InspectRp = dict.object(forKey: "InspectRp") as? NSDictionary, let fileUrl = InspectRp.object(forKey: "fileUrl") as? String {
+                    self.openSafari("\(URL_AVARTA)/\(fileUrl)")
+                }
+            }
+        }
+
+    }
     
     func configCell(_ cell: ConnectionCell,_ dict: NSDictionary ,_ activityObj: MyTrandObj)
     {
+       
        if activityObj.sentRqs {
             if let connectTo = dict.object(forKey: "receiver") as? NSDictionary
             {
@@ -758,7 +824,6 @@ extension MyTradeConnectionVC{
                     else{
                         if let avatar = connectTo.object(forKey: "avatar") as? String
                         {
-                            //cell.imgAvatar.image = Common.convertBase64ToImage(avatar)
                             Common.loadAvatarFromServer(avatar,cell.imgAvatar)
                         }
                         else{
@@ -1311,32 +1376,7 @@ extension MyTradeConnectionVC{
                 }
             }
         }
-//        if let exchangedCDD = activityObj.dict.object(forKey: "exchangedCDD") as? NSDictionary{
-//            if activityObj.dict.object(forKey: "accessToken") == nil{
-//                let requestedId = exchangedCDD.object(forKey: "requestedId") as? String ?? ""
-//                if requestedId == APP_DELEGATE.profileObj?._id {
-//                    cell.viewDieclineReport.isHidden = true
-//                    cell.btnCDD.setTitle("CDD REQUEST PENDING", for: .normal)
-//                    cell.bgCDD.backgroundColor = Common.hexStringToUIColor(COLOR_REPORT.COLOR_XAM)
-//                }
-//                else{
-//                    cell.viewDieclineReport.isHidden = false
-//                    cell.btnCDD.setTitle("ACCEPT TO SHARE CDD REPORT", for: .normal)
-//                    cell.bgCDD.backgroundColor = Common.hexStringToUIColor(COLOR_REPORT.COLOR_TIM)
-//                }
-//            }
-//            else{
-//                cell.viewDieclineReport.isHidden = true
-//                cell.btnCDD.setTitle("VIEW CDD REPORT", for: .normal)
-//                cell.bgCDD.backgroundColor = Common.hexStringToUIColor(COLOR_REPORT.COLOR_XANH)
-//            }
-//        }
-//        else{
-//            cell.viewDieclineReport.isHidden = true
-//            cell.btnCDD.setTitle("REQUEST CDD REPORT", for: .normal)
-//            cell.bgCDD.backgroundColor = Common.hexStringToUIColor(COLOR_REPORT.COLOR_XANH)
-//
-//        }
+
     }
     func callAPIAccept(_ id: String)
     {

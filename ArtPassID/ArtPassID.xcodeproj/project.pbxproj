@@ -167,6 +167,8 @@
 		7887C4FB22697D93002F66B5 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7887C4FA22697D93002F66B5 /* MenuVC.swift */; };
 		7892C3BE2269AF00009CEE61 /* AppDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7892C3BD2269AF00009CEE61 /* AppDefine.swift */; };
 		7892C3C12269B4D4009CEE61 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7892C3BF2269B4D3009CEE61 /* Main_iPad.storyboard */; };
+		881C28152DD4448B00DD5206 /* InspectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881C28132DD4448B00DD5206 /* InspectTableViewCell.swift */; };
+		881C28162DD4448B00DD5206 /* InspectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 881C28142DD4448B00DD5206 /* InspectTableViewCell.xib */; };
 		884D31252B96B53300159A7B /* Gilmer-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 884D31242B96B53300159A7B /* Gilmer-Regular.otf */; };
 		884D31272B96B56700159A7B /* Gilmer-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 884D31262B96B56700159A7B /* Gilmer-Bold.otf */; };
 		884F38B12DD3262D008F7434 /* RiskSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884F38B02DD3262D008F7434 /* RiskSearchViewController.swift */; };
@@ -368,6 +370,8 @@
 		7887C4FA22697D93002F66B5 /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 		7892C3BD2269AF00009CEE61 /* AppDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDefine.swift; sourceTree = "<group>"; };
 		7892C3C02269B4D4009CEE61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		881C28132DD4448B00DD5206 /* InspectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectTableViewCell.swift; sourceTree = "<group>"; };
+		881C28142DD4448B00DD5206 /* InspectTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InspectTableViewCell.xib; sourceTree = "<group>"; };
 		884D31242B96B53300159A7B /* Gilmer-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilmer-Regular.otf"; sourceTree = "<group>"; };
 		884D31262B96B56700159A7B /* Gilmer-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilmer-Bold.otf"; sourceTree = "<group>"; };
 		884F38B02DD3262D008F7434 /* RiskSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiskSearchViewController.swift; sourceTree = "<group>"; };
@@ -468,6 +472,8 @@
 				48AFEF5525086E1D00E5C8FE /* NewMyTradeVC.swift */,
 				48AFEF572508845300E5C8FE /* MyTradeConnectionVC.swift */,
 				48AFEF592508854D00E5C8FE /* TradeCell.swift */,
+				881C28132DD4448B00DD5206 /* InspectTableViewCell.swift */,
+				881C28142DD4448B00DD5206 /* InspectTableViewCell.xib */,
 			);
 			path = MyReportVC;
 			sourceTree = "<group>";
@@ -890,6 +896,7 @@
 				48DA6236272BDC0400063460 /* NunitoSans-SemiBold.ttf in Resources */,
 				7887C4F42269790B002F66B5 /* SVPinCell.xib in Resources */,
 				48E4CB8F23EAAEAC00961A6C /* Roboto-Bold.ttf in Resources */,
+				881C28162DD4448B00DD5206 /* InspectTableViewCell.xib in Resources */,
 				7887C4CC226963D8002F66B5 /* Montserrat-Bold.ttf in Resources */,
 				48E4CB8C23EAAEAC00961A6C /* Roboto-LightItalic.ttf in Resources */,
 				7887C4A222696291002F66B5 /* Assets.xcassets in Resources */,
@@ -1033,6 +1040,7 @@
 				48930AD92424BC76008D247D /* BusinessStep2VC.swift in Sources */,
 				487AC5C0246D50EC0092B697 /* PaymentDetailVC.swift in Sources */,
 				48930AD72424BC5D008D247D /* BusinessStep1VC.swift in Sources */,
+				881C28152DD4448B00DD5206 /* InspectTableViewCell.swift in Sources */,
 				4812384A2431A904009D4971 /* JurisdictionCell.swift in Sources */,
 				4849E0BC252C2A6A00EBDF62 /* MyMemberShipVC.swift in Sources */,
 				48E34E8E2463FFD500DA1AC8 /* CreateNewTransationVC.swift in Sources */,

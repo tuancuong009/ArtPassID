@@ -23,7 +23,7 @@ class RiskSearchViewController: BaseVC {
     ]
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print("Info--->", APP_DELEGATE.inforUser?.object(forKey: "username") as? String)
         // Do any additional setup after loading the view.
     }
     
@@ -50,7 +50,7 @@ class RiskSearchViewController: BaseVC {
             switch result.resultStatus {
             case .finished:
                 if let data = result.data {
-                    let param = ["owner_username": APP_DELEGATE.userObj.username, "first_name": data.firstName , "middle_name": "", "last_name": data.lastName, "dob": data.dateOfBirth, "birth_country": data.nationality, "nationality": data.nationality, "gender": data.sex]
+                    let param = ["owner_username": APP_DELEGATE.inforUser?.object(forKey: "username") as? String ?? "", "first_name": data.firstName , "middle_name": "", "last_name": data.lastName, "dob": data.dateOfBirth, "birth_country": data.nationality, "nationality": data.nationality, "gender": data.sex]
                     self.data = [
                         ("Name", data.firstName + " " + data.lastName),
                         ("Sex", data.sex.capitalized),

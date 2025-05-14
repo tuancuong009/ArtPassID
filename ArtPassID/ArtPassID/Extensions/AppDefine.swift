@@ -95,6 +95,7 @@ struct UTYPE_USER {
     static let PATRON = "PATRON"
     static let BUSINESS = "BUSINESS"
     static let NONPROFIT = "NONPROFIT"
+    static let PERSON = "PERSON"
 }
 
 struct TAG_ARRAY

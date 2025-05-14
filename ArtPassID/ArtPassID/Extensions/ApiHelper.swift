@@ -2818,9 +2818,9 @@ class ApiHelper {
         Common.showBusy()
         let header: HTTPHeaders    = ["Content-Type": "application/x-www-form-urlencoded", "Authorization": "Bearer \(UserDefaults.standard.value(forKey: kToken) as? String ?? "")"]
         print(header)
-        print("https://artpass.id/link/private/create-person-onboard")
+        print("https://ipass.id/link/private/create-person-onboard")
         print(param)
-        manager.request(URL.init(string: "https://artpass.id/link/private/create-person-onboard")!, method: .post, parameters:param,  encoding: URLEncoding.default, headers: header)
+        manager.request(URL.init(string: "https://ipass.id/link/private/create-person-onboard")!, method: .post, parameters:param,  encoding: URLEncoding.default, headers: header)
                .responseJSON { response in
                   Common.hideBusy()
                    switch(response.result) {
@@ -2829,8 +2829,8 @@ class ApiHelper {
                        if let val = response.value as? NSDictionary
                        {
                            print(val)
-                          if let error_text = val.object(forKey: "error") as? NSDictionary {
-                            complete(false, ErrorManager.processError(error: nil, errorCode: nil, errorMsg: error_text.object(forKey: "message") as? String ?? ""))
+                           if let error_text = val.object(forKey: "error") as? String {
+                            complete(false, ErrorManager.processError(error: nil, errorCode: nil, errorMsg: error_text))
                            }
                            else{
                                if let status = val.object(forKey: "message") as? String
