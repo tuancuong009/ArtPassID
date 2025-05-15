@@ -615,15 +615,7 @@ extension MyTradeConnectionVC: UITableViewDataSource, UITableViewDelegate{
                         }
                         else{
                             ApiHelper.shared.deleteCDDNetwork(mytraidObj.dict) { (success, error) in
-//                                if success
-//                                {
-//                                    self.callAPIGetConnection()
-//                                }
-//                                else{
-//                                    if error != nil {
-//                                        APP_DELEGATE.showAlert(error!.msg!)
-//                                    }
-//                                }
+
                                 self.callAPIGetConnection()
                             }
                             
@@ -774,17 +766,9 @@ extension MyTradeConnectionVC{
         
         cell.tapRemove = { [] in
                  
-                if let _id = activityObj.dict.object(forKey: "_id") as? String
-                {
-                    let actType = self.getValueActype(_id)
-                    if self.arrIDNotification.contains(_id) && !actType.isEmpty
-                    {
-                        self.readNotification(_id)
-                    }
-                   
-                }
-            
-             self.deleteConnect(activityObj.dict.object(forKey: "req_id") as? String ?? "")
+            ApiHelper.shared.deleteCDDNetwork(activityObj.dict) { (success, error) in
+                self.callAPIGetConnection()
+            }
         }
         
         
